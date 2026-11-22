@@ -1,0 +1,23 @@
+{
+  "parse": {
+    "title": "Wikipedia:Vital articles",
+    "pageid": 77006672,
+    "links": [
+      {
+        "ns": 0,
+        "title": "Albert Einstein",
+        "exists": true
+      },
+      {
+        "ns": 0,
+        "title": "Beijing",
+        "exists": true
+      },
+      {
+        "ns": 0,
+        "title": "Delhi",
+        "exists": true
+      }
+    ]
+  }
+}

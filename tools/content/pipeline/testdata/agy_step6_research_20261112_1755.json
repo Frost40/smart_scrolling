@@ -1,0 +1,128 @@
+{
+  "scope": "Antigravity only: pipeline ticket 01, step 6; research, no preset or design changes",
+  "date": "2026-11-12",
+  "program": "C:/Users/<user>/.gemini/bin/agy.exe",
+  "installation": {
+    "metadata_file": "C:/Users/<user>/.gemini/bin/agy.version.json",
+    "metadata_version": "1.5.7",
+    "binary_size_bytes": 243185304,
+    "changelog_first_version_heading": "1.5.6:",
+    "note": "Version is from installation metadata, not a successful --version invocation."
+  },
+  "isolation": {
+    "working_directory": "<fresh temporary root>/sandbox",
+    "child_environment": {
+      "HOME": "<fresh temporary root>/home",
+      "USERPROFILE": "<fresh temporary root>/userprofile",
+      "APPDATA": "<fresh temporary root>/appdata",
+      "LOCALAPPDATA": "<fresh temporary root>/localappdata",
+      "PIPELINE_HOME": "<fresh temporary root>/pipeline_home"
+    },
+    "environment_removal": "Removed inherited variable names containing API_KEY, TOKEN, SECRET, or PASSWORD (case insensitive).",
+    "settings_location": "Session settings JSON files in the temporary root; passed using --settings.",
+    "safe_session_settings": {
+      "toolPermission": "strict",
+      "useG1Credits": false,
+      "allowNonWorkspaceAccess": false,
+      "modelProvider": ""
+    },
+    "owner_credentials": "Not read or copied; no login completed."
+  },
+  "local_help": {
+    "commands": [
+      ["C:/Users/<user>/.gemini/bin/agy.exe", "--help"],
+      ["C:/Users/<user>/.gemini/bin/agy.exe", "help"],
+      ["C:/Users/<user>/.gemini/bin/agy.exe", "changelog"]
+    ],
+    "exit_codes": [0, 0, 0],
+    "input_format_help": "Input format for print mode (text, stream-json). stream-json reads one NDJSON message per line from stdin and runs a turn for each; it requires --output-format stream-json (default text)",
+    "settings_help": "Settings for this session only, never saved: a JSON object of settings.json keys, inline or as a file path",
+    "changelog": {
+      "version": "1.1.15",
+      "entry": "Added --input-format stream-json to print mode, which reads newline-delimited JSON prompts from stdin and runs one turn per message in a single conversation, so a driver can keep a session open."
+    }
+  },
+  "documented_protocol": {
+    "source": "https://antigravity.google/docs/cli/headless/#stream-prompts-from-stdin",
+    "verification_level": "Official documentation plus matching local help and changelog; successful runtime ingestion was blocked by authentication.",
+    "stdin_string": "{\"event\":\"user\",\"message\":{\"content\":\"Reply exactly OK. Do not use tools.\"}}\n",
+    "stdin_text_blocks": "{\"event\":\"user\",\"message\":{\"content\":[{\"type\":\"text\",\"text\":\"Reply exactly OK. Do not use tools.\"}]}}\n",
+    "launch": [
+      "C:/Users/<user>/.gemini/bin/agy.exe",
+      "--input-format", "stream-json",
+      "--output-format", "stream-json",
+      "--model", "gemini-3.8-flash-low",
+      "--sandbox",
+      "--disable-slash-commands",
+      "--print-timeout", "10s",
+      "--settings", "<fresh temporary root>/valid-stream.settings.json"
+    ],
+    "framing": "One complete JSON object per line; content newlines must be JSON-escaped. No -p argument is required.",
+    "completion": "Close stdin after the final message; docs say the pending turn completes before exit.",
+    "result": "Read the event named result, then result.structured_output for schema output, and result.usage for token counts. Stream output is NDJSON, not one JSON object.",
+    "schema": "--json-schema may name a temporary schema file; docs say it applies to the terminal result event.",
+    "runtime_success": false,
+    "long_prompt_runtime_tested": false
+  },
+  "settings_probes": {
+    "launch": "Same executable and stream flags as documented_protocol.launch, with the respective temporary settings file.",
+    "cases": [
+      {
+        "additional_settings": {"tools": [], "disabledTools": ["*"]},
+        "stdin": "{\"event\":\"user\",\"message\":{\"content\":\"Reply exactly OK. Do not use tools.\"}}\n",
+        "exit_code": 1,
+        "seconds": 0.14,
+        "stdout": "",
+        "stderr": "Error: --settings: unknown setting \"disabledTools\"\n",
+        "print_timeout": "10s"
+      },
+      {
+        "additional_settings": {"tools": []},
+        "stdin": "",
+        "exit_code": 1,
+        "seconds": 0.17,
+        "stdout": "",
+        "stderr": "Error: --settings: unknown setting \"tools\"\n"
+      },
+      {
+        "additional_settings": {"excludeTools": ["*"]},
+        "stdin": "",
+        "exit_code": 1,
+        "seconds": 0.16,
+        "stdout": "",
+        "stderr": "Error: --settings: unknown setting \"excludeTools\"\n"
+      }
+    ],
+    "documentation": [
+      "https://antigravity.google/schemas/v1/settings.json",
+      "https://antigravity.google/docs/cli/reference/#configuration-keys-settingsjson",
+      "https://antigravity.google/docs/settings?tab=cli"
+    ],
+    "conclusion": "No supported tool-removal setting found. strict and permissions.deny govern permission checks; they are not evidence that tool declarations are removed. Keep tools:on until an authenticated init.tools check proves otherwise.",
+    "caution": "Binary strings mention disabledTools in other internal types; the CLI session settings parser explicitly rejects it."
+  },
+  "valid_input_probe": {
+    "temporary_root": "C:/Users/<user>/AppData/Local/Temp/agy-step6-validation-_eb9kr2v",
+    "launch": "Exactly documented_protocol.launch with valid-stream.settings.json under this temporary root.",
+    "settings": "Exactly isolation.safe_session_settings.",
+    "stdin": "Exactly documented_protocol.stdin_string.",
+    "stdout": "",
+    "sanitized_stderr_lines": [
+      "Authentication required. Please visit the URL to log in:",
+      "[OAuth authorization URL omitted]",
+      "Waiting for authentication (timeout 60s)...",
+      "Or, paste the authorization code here and press Enter:"
+    ],
+    "outcome": "Terminated the probe process after the external 18-second timeout (18.03 seconds measured). The CLI's 10-second print timeout did not bound authentication startup.",
+    "blocker": "Fresh temporary home has no cached subscription login. No init event, model response, usage, or tool list was obtained.",
+    "earlier_probe": "An earlier isolated attempt used 45s print timeout and a 55s external limit; its output was not retained in this fixture. It provides no additional evidence.",
+    "no_further_model_probes": true
+  },
+  "not_done": [
+    "No paid API calls or successful model calls.",
+    "No credential reads, copies, or owner settings changes.",
+    "No dangerous permission flags.",
+    "No edits to design, defaults, presets, ticket status, or application code.",
+    "No Codex model research; outside the requested scope."
+  ]
+}

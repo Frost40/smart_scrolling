@@ -1,0 +1,40 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "gsroffset": 10,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": {
+      "197034905": {
+        "pageid": 197034905,
+        "ns": 6,
+        "title": "File:Dülmen, Weddern, Sonnenblumen -- 2026 -- 2005.jpg",
+        "index": 9,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/D%C3%BClmen%2C_Weddern%2C_Sonnenblumen_--_2026_--_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Weddern,_Sonnenblumen_--_2026_--_2005.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=197034905",
+            "extmetadata": {
+              "ImageDescription": {
+                "value": "Sunflower field in the Weddern hamlet, Kirchspiel, <a href=\"https://en.wikipedia.org/wiki/D%C3%BClmen\" class=\"extiw\" title=\"en:Dülmen\">Dülmen</a>, <a href=\"https://en.wikipedia.org/wiki/North_Rhine-Westphalia\" class=\"extiw\" title=\"en:North Rhine-Westphalia\">North Rhine-Westphalia</a>, Germany",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q34788025\" class=\"extiw\" title=\"d:Q34788025\"><span title=\"German photographer and mathematician\">Dietmar Rabich</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

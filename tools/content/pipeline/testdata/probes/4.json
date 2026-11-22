@@ -1,0 +1,72 @@
+{
+  "query": "The Problems of Philosophy Russell",
+  "messages": [
+    {
+      "id": 6248,
+      "text": "Good news! We found 80 📚 on your request:\n\n📚 THE PROBLEMS OF PHILOSOPHY\nBertrand Russell\nYear: 2001\n🌐 English\n/book_aY5jJKx47vp (epub, 4.82 MB) ↗️\n\n📚 THE PROBLEMS OF PHILOSOPHY BY BERTRAND RUSSELL\nRussell, Bertrand\nYear: 2011\n🌐 English\n/book_aojLQ9qDJvL (mobi, 797 KB) ↗️\n\n📚 THE PROBLEMS OF PHILOSOPHY BY BERTRAND RUSSELL: VOOK CLASSICS\nBertrand Russell\nYear: 2010\n🌐 English\n/book_aJR65GJWBON (epub, 809 KB) ↗️\n\n📚 THE PROBLEMS OF PHILOSOPHY\nBertrand Russell\nYear: 2001\n🌐 English\n/book_aMyRaZKMgjQ (pdf, 5.80 MB) ↗️\n\n📚 THE PROBLEMS OF PHILOSOPHY\nBertrand Russell\nYear: 2010\n🌐 English\n/book_arZO96L95Re (pdf, 264 KB) ↗️",
+      "edit": false,
+      "entities": [
+        {
+          "type": "command",
+          "text": "/book_aY5jJKx47vp"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/Y5jJKx47vp"
+        },
+        {
+          "type": "command",
+          "text": "/book_aojLQ9qDJvL"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/ojLQ9qDJvL"
+        },
+        {
+          "type": "command",
+          "text": "/book_aJR65GJWBON"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/JR65GJWBON"
+        },
+        {
+          "type": "command",
+          "text": "/book_aMyRaZKMgjQ"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/MyRaZKMgjQ"
+        },
+        {
+          "type": "command",
+          "text": "/book_arZO96L95Re"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/rZO96L95Re"
+        }
+      ],
+      "buttons": [
+        [
+          {
+            "text": "- 1 -",
+            "kind": "callback",
+            "data": "636f6d6d616e643d64756d6d79"
+          },
+          {
+            "text": "(2) next »",
+            "kind": "callback",
+            "data": "636f6d6d616e643d6c69676874506167696e6174696f6e26706167653d32266c696d69743d35"
+          }
+        ]
+      ],
+      "file": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "from": [
+    4,
+    2
+  ],
+  "option": "📚 THE PROBLEMS OF PHILOSOPHY · Bertrand Russell · Year: 2001 · 🌐 English · /book_aY5jJKx47vp (epub, 4.82 MB) ↗️",
+  "messages": [
+    {
+      "id": 6252,
+      "text": "📚 THE PROBLEMS OF PHILOSOPHY\nBertrand Russell\nYear: 2001\n🌐 English\n\n'Is there any knowledge in the world which is so certain that no reasonable man could doubt it?' Philosophy is the attempt to answer such ultimate questions, not carelessly and dogmatically, as we...",
+      "edit": false,
+      "entities": [],
+      "buttons": [
+        [
+          {
+            "text": "Click to read full description",
+            "kind": "callback",
+            "data": "636f6d6d616e643d66756c6c4465736372697074696f6e2670783d626f6f6b5f6126686173683d59356a4a4b7834377670"
+          }
+        ]
+      ],
+      "file": null
+    },
+    {
+      "id": 6254,
+      "text": "",
+      "edit": false,
+      "entities": [],
+      "buttons": [],
+      "file": {
+        "name": "The_Problems_of_Philosophy_Bertrand_example.epub",
+        "size": 5057736,
+        "type": "application/epub+zip"
+      }
+    }
+  ]
+}

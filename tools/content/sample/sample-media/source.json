@@ -1,0 +1,38 @@
+{
+  "id": "sample-media",
+  "kind": "other",
+  "is_sample": true,
+  "status": "published",
+  "title": "Media player checks (sample)",
+  "topics": [
+    "physics"
+  ],
+  "description": "Test fixtures only. The fallback butterfly clip is Flutter's documented video_player example; all other media is generated locally.",
+  "discover_cards": [
+    {
+      "id": "sample-video",
+      "format": "video",
+      "title": "A short sample video",
+      "front": "Sample media for testing play, pause, captions and resume.",
+      "media": "cards/sample-video/video.mp4",
+      "poster": "cards/sample-video/poster.png",
+      "captions": "cards/sample-video/captions.vtt",
+      "transcript": "A butterfly moves its wings in a silent Flutter sample video.",
+      "duration_seconds": 8,
+      "media_alt": "A teal gradient sample poster."
+    },
+    {
+      "id": "sample-tone",
+      "format": "audio",
+      "title": "A sample tone",
+      "front": "Sample media for testing play, pause, captions and resume.",
+      "media": "cards/sample-tone/audio.wav",
+      "poster": "cards/sample-tone/poster.png",
+      "captions": "cards/sample-tone/captions.vtt",
+      "transcript": "A steady 440 Hz tone for eight seconds. There is no speech.",
+      "duration_seconds": 8,
+      "media_alt": "A teal gradient sample poster."
+    }
+  ],
+  "practice_cards": []
+}

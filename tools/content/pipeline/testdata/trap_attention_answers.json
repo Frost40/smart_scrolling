@@ -1,0 +1,340 @@
+{
+  "_about": "Saved model answers for a full offline run on cardmaker/eval/trap-attention.txt, taken from cardmaker/eval/first-run/smoke-output-2026-11-12.txt (refs renumbered to 01:n, two ideas and some repairs and tests added). The fake provider answers per ref. 01:1 is flagged once by the blind reader and repaired.",
+  "extract": {
+    "ideas": [
+      {
+        "title": "Multitasking as brain training myth",
+        "claim": "The belief that the brain grows stronger the more tasks it carries at once, so people who cannot juggle several jobs are out of training, is wrong.",
+        "support": "Dale Hobbs, a management writer, promoted this idea to office workers in the 1990s, but his claim was never tested. When Marta Ruiz and Tomas Lind tested doing two jobs at once, the second group took 40 percent longer and made about twice as many errors.",
+        "limits": "The test was on desk work by adults over one afternoon; it did not cover drivers, surgeons or children.",
+        "stance": "rejects",
+        "kind": "myth",
+        "paragraphs": [
+          "P1",
+          "P2"
+        ],
+        "evidence_quote": "The second group took 40 percent longer to finish and made about twice as many errors.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 4
+      },
+      {
+        "title": "Doing two jobs at once study",
+        "claim": "When office workers had to proofread text and answer sums at the same time, they were slower and less accurate than when they did the two jobs one after the other.",
+        "support": "In 2009 Marta Ruiz and her colleague Tomas Lind gave 212 adult office workers two ordinary jobs, with half doing them in sequence and half doing them together. The simultaneous group took 40 percent longer and made about twice as many errors.",
+        "limits": "The study covered desk work by adults in a single afternoon.",
+        "stance": "claims",
+        "kind": "research",
+        "paragraphs": [
+          "P2"
+        ],
+        "evidence_quote": "The second group took 40 percent longer to finish and made about twice as many errors.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 4
+      },
+      {
+        "title": "Switch cost paid unnoticed",
+        "claim": "Every switch between jobs has a hidden cost, paid in seconds and mistakes, that the person switching does not feel.",
+        "support": "Ruiz called this cost the switch cost. People can switch quickly, but each switch still takes time and creates errors that go unnoticed by the person making it.",
+        "limits": "Her result came from desk work done by adults in a single afternoon, so the cost was not measured for drivers, surgeons or children.",
+        "stance": "claims",
+        "kind": "concept",
+        "paragraphs": [
+          "P3"
+        ],
+        "evidence_quote": "It is that every switch has a price, paid in seconds and in mistakes, and that the person paying it does not feel the bill.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 5
+      },
+      {
+        "title": "Multitaskers overrate their performance",
+        "claim": "People who do two jobs at once tend to judge their own work as better than people who did one job at a time, even when their work is worse.",
+        "support": "After the experiment, the people who had done both jobs together rated their own performance higher than those who worked on one job at a time.",
+        "limits": "Shown in one study of office workers doing two simple jobs.",
+        "stance": "claims",
+        "kind": "research",
+        "paragraphs": [
+          "P2"
+        ],
+        "evidence_quote": "When asked afterwards, the people who had done both at once rated their own performance higher than the people who had worked on one job at a time.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 4
+      },
+      {
+        "title": "Second job, not noise, harms",
+        "claim": "Background noise such as soft music does not slow work or add errors; the second task itself is what causes the damage.",
+        "support": "In a smaller follow-up with 48 people, soft background music made no measurable difference to speed or errors.",
+        "limits": "Based on a smaller follow-up with 48 people, and only soft background music was tested.",
+        "stance": "claims",
+        "kind": "research",
+        "paragraphs": [
+          "P6"
+        ],
+        "evidence_quote": "It was the second job, not the noise, that did the damage.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 3
+      },
+      {
+        "title": "Invented evidence",
+        "claim": "Office workers prefer quiet rooms.",
+        "support": "Most people said so.",
+        "limits": "",
+        "stance": "claims",
+        "kind": "concept",
+        "paragraphs": [
+          "P6"
+        ],
+        "evidence_quote": "Most office workers said they prefer a quiet room to any music at all.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 2
+      },
+      {
+        "title": "A minor detail",
+        "claim": "Marta Ruiz and Tomas Lind stopped working together in 2011.",
+        "support": "The two disagreed about the result.",
+        "limits": "",
+        "stance": "claims",
+        "kind": "concept",
+        "paragraphs": [
+          "P4"
+        ],
+        "evidence_quote": "The two stopped working together in 2011.",
+        "quote_text": "",
+        "speaker": "",
+        "importance": 1
+      }
+    ]
+  },
+  "select": {
+    "chosen": [
+      {
+        "ref": "01:1",
+        "format": "myth",
+        "level": "intro"
+      },
+      {
+        "ref": "01:2",
+        "format": "research",
+        "level": "intro"
+      },
+      {
+        "ref": "01:3",
+        "format": "concept",
+        "level": "intro"
+      },
+      {
+        "ref": "01:4",
+        "format": "research",
+        "level": "intermediate"
+      },
+      {
+        "ref": "01:5",
+        "format": "research",
+        "level": "intermediate"
+      }
+    ],
+    "duplicates": [],
+    "topics": [
+      "psychology",
+      "made-up-topic"
+    ],
+    "new_topic": ""
+  },
+  "write": {
+    "01:1": {
+      "title": "Multitasking as brain training myth",
+      "front": "Doing many jobs at once makes the brain grow stronger, so people who cannot juggle several tasks are out of training.",
+      "back": "The management writer Dale Hobbs promoted this idea in the 1990s, but the claim was never tested. When the researchers Marta Ruiz and Tomas Lind tested two jobs at once in 2009, the group doing both together took 40 percent longer and made about twice as many errors."
+    },
+    "01:2": {
+      "title": "Two jobs together slowed work",
+      "front": "When office workers had to proofread text and answer sums at the same time, they were slower and less accurate than when they did the jobs in turn.",
+      "back": "In 2009 the researcher Marta Ruiz and her colleague Tomas Lind recruited 212 adult office workers and asked each of them to do two ordinary jobs. The group doing both at once took 40 percent longer and made about twice as many errors."
+    },
+    "01:3": {
+      "title": "Switch cost paid unnoticed",
+      "front": "Every switch between jobs carries a hidden cost, paid in seconds and mistakes, that the person switching does not feel.",
+      "back": "The researcher Marta Ruiz called this cost the switch cost. People can switch between jobs quickly, but each switch still takes time and creates errors that the person making it does not notice."
+    },
+    "01:4": {
+      "title": "Multitaskers overrate their performance",
+      "front": "People who did two jobs at once rated their own work higher than people who did one job at a time, even though their work was worse.",
+      "back": "In the 2009 study by the researcher Marta Ruiz and her colleague Tomas Lind, the people who had done both jobs together gave themselves higher ratings afterwards."
+    }
+  },
+  "repair": {
+    "01:2": {
+      "title": "Two jobs together slowed work",
+      "front": "Office workers who proofread text and answered spoken sums at the same time were slower and less accurate than workers who did the jobs in turn.",
+      "back": "In 2009 the researcher Marta Ruiz and her colleague Tomas Lind tested 212 adult office workers. The group doing both jobs together needed 40 percent more time and made about twice as many errors."
+    },
+    "01:4": {
+      "title": "Multitaskers overrate their performance",
+      "front": "People who did two jobs at once rated their own work higher than people who did one job at a time.",
+      "back": "In a 2009 study the people who had done both jobs together gave themselves higher ratings afterwards."
+    }
+  },
+  "judge": {
+    "01:1": {
+      "supported": true,
+      "faithful": true,
+      "standalone": true,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "",
+      "fix": ""
+    },
+    "01:3": {
+      "supported": true,
+      "faithful": true,
+      "standalone": true,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "",
+      "fix": ""
+    },
+    "01:4": {
+      "supported": true,
+      "faithful": true,
+      "standalone": false,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "The back never says how their work was worse.",
+      "fix": "Say that the same group took longer and made more errors."
+    }
+  },
+  "judge_repair": {
+    "01:2": {
+      "supported": true,
+      "faithful": true,
+      "standalone": true,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "",
+      "fix": ""
+    },
+    "01:4": {
+      "supported": true,
+      "faithful": true,
+      "standalone": false,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "'A 2009 study' is still not explained.",
+      "fix": "Name the study."
+    },
+    "01:1": {
+      "supported": true,
+      "faithful": true,
+      "standalone": true,
+      "complete": true,
+      "one_idea": true,
+      "worth": true,
+      "problem": "",
+      "fix": ""
+    }
+  },
+  "quiz": {
+    "01:1": [
+      {
+        "type": "flashcard",
+        "prompt": "Does doing many jobs at once strengthen the brain, and what did the 2009 test by Marta Ruiz and Tomas Lind find?",
+        "answer": "No. Doing two jobs together took 40 percent longer and caused about twice as many errors.",
+        "explanation": "The belief was never tested until 2009."
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "What did the 2009 test show about doing two jobs together?",
+        "choices": [
+          "Doing two jobs together made people finish faster",
+          "Doing two jobs together took longer and caused more errors",
+          "Doing two jobs together halved the number of errors",
+          "Doing two jobs together made no difference to speed"
+        ],
+        "correct_choice": 1,
+        "explanation": "It took about 40 percent longer with about twice as many errors."
+      },
+      {
+        "type": "true_false",
+        "prompt": "The belief that doing many jobs at once makes the brain stronger was confirmed by Marta Ruiz and Tomas Lind in 2009.",
+        "is_true": false,
+        "explanation": "The test found the opposite."
+      }
+    ],
+    "01:2": [
+      {
+        "type": "flashcard",
+        "prompt": "What happened to office workers who proofread and answered sums at the same time?",
+        "answer": "They needed 40 percent more time and made about twice as many errors.",
+        "explanation": "That is the result of the 2009 test."
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "How much more time did the group doing both jobs together need?",
+        "choices": [
+          "About 4 percent more",
+          "About 40 percent more",
+          "About twice as much",
+          "About the same"
+        ],
+        "correct_choice": 1,
+        "explanation": "They needed 40 percent more time."
+      },
+      {
+        "type": "true_false",
+        "prompt": "The group doing both jobs together made about half as many errors.",
+        "is_true": false,
+        "explanation": "They made about twice as many errors."
+      }
+    ],
+    "01:3": [
+      {
+        "type": "flashcard",
+        "prompt": "What hidden cost comes with each switch between jobs?",
+        "answer": "Each switch costs seconds and mistakes that the person does not feel.",
+        "explanation": "The switch cost goes unnoticed."
+      },
+      {
+        "type": "multiple_choice",
+        "prompt": "A cook glances at a phone and feels no slowdown. What is probably happening?",
+        "choices": [
+          "The brain needs no time to change tasks",
+          "The switch still costs time and can cause errors",
+          "No switch has taken place at all",
+          "Switching costs only add up for hard tasks"
+        ],
+        "correct_choice": 1,
+        "explanation": "Each switch has a cost even when it is not felt."
+      },
+      {
+        "type": "true_false",
+        "prompt": "Each switch between two jobs costs some time, even when the person does not notice it.",
+        "is_true": true,
+        "explanation": "The cost is hidden."
+      }
+    ]
+  },
+  "solve_wrong": [
+    "01:3-tf",
+    "01:3-choice"
+  ],
+  "solve_unclear": {
+    "01:1": "Dale Hobbs"
+  },
+  "repair_unclear": {
+    "01:1": {
+      "title": "Multitasking as brain training myth",
+      "front": "Doing many jobs at once makes the brain grow stronger, so people who cannot juggle several tasks are out of training.",
+      "back": "The management writer Dale Hobbs, who gave popular seminars to office workers, promoted this idea in the 1990s without testing it. When the researchers Marta Ruiz and Tomas Lind tested two jobs at once in 2009, the group doing both together took 40 percent longer and made about twice as many errors."
+    }
+  }
+}

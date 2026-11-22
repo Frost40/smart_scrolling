@@ -1,0 +1,16 @@
+#!/bin/sh
+# Blocks the commit when formatting, the analyzer or the tests fail.
+# Turn it on once per clone: git config core.hooksPath .githooks
+staged=$(git diff --cached --name-only)
+if echo "$staged" | grep -qE '\.py$'; then
+  python -m unittest discover tools/content || exit 1
+fi
+if ! echo "$staged" | grep -qE '\.dart$|^pubspec\.(yaml|lock)$|^analysis_options\.yaml$|^lib/core/widgets/README\.md$'; then
+  exit 0
+fi
+dart format --output=none --set-exit-if-changed lib test integration_test || {
+  echo "Formatting needed. Run: dart format lib test integration_test"
+  exit 1
+}
+flutter analyze || exit 1
+flutter test || exit 1

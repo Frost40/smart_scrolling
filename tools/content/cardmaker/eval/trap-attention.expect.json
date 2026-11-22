@@ -1,0 +1,42 @@
+{
+  "_about": "What a correct run on trap-attention.txt must and must not produce. The passage is made up: the people and the study do not exist. Never upload it.",
+  "source": {"kind": "book", "title": "The Busy Mind (made-up test text)", "authors": ["Test Author"], "is_sample": true},
+  "brief": {
+    "thesis": "Doing several jobs at once feels productive but makes work slower and less accurate, because each switch between jobs costs time and attention that people do not notice.",
+    "outline": [
+      {"part": 3, "heading": "The sleep laboratory", "gist": "Marta Ruiz's early career at Northfield."},
+      {"part": 4, "heading": "The Myth of the Busy Mind", "gist": "The experiment that tested doing two jobs at once."},
+      {"part": 5, "heading": "The telephone", "gist": "What a second job does to a conversation."}
+    ],
+    "glossary": [],
+    "people": [{"name": "Marta Ruiz", "role": "researcher who ran the sleep laboratory at Northfield"}]
+  },
+  "traps": [
+    "P1 opens with 'As we saw in the last chapter' and P6 ends with 'In the next chapter': book talk that must not reach a card.",
+    "P1: Dale Hobbs's claim that the brain is a muscle is a belief the text rejects.",
+    "P2: 'The second group', 'What surprised her': references that need resolving.",
+    "P3: limits: desk work, adults, one afternoon; drivers, surgeons and children were not tested.",
+    "P4: Tomas Lind disagrees: a reported view, not the text's claim.",
+    "P5: the quote is only 'usually given to' Publilius Syrus.",
+    "P6: 'They found' starts a paragraph; the follow-up had 48 people; music made no difference."
+  ],
+  "forbidden_patterns": [
+    "last chapter", "next chapter", "as we saw", "the author", "this chapter", "the text\\b"
+  ],
+  "allowed_numbers": ["212", "48", "40", "2009", "2011", "1990", "1990s", "11"],
+  "must_not_say": [
+    "The brain grows stronger the more tasks it does at once (stated as a fact).",
+    "Doing two jobs at once makes drivers, surgeons or children slower (the study did not test them).",
+    "Background music makes work slower, or makes it faster.",
+    "Tomas Lind agreed with Marta Ruiz's reading of the result.",
+    "The extra errors were caused by the sums being read too fast (stated as a fact instead of as Tomas Lind's view).",
+    "Publilius Syrus certainly wrote the line about doing two things at once.",
+    "People cannot switch between jobs."
+  ],
+  "should_cover": [
+    {"idea": "two jobs at once: 40 percent longer, about twice the errors", "any_of": ["40 percent", "40%", "twice"]},
+    {"idea": "the switch cost goes unnoticed", "any_of": ["switch cost", "each switch", "every switch"]},
+    {"idea": "people who did both rated themselves higher", "any_of": ["rated", "rate their own"]}
+  ],
+  "pass_rule": "No card or test (wrong answer choices aside) matches a forbidden pattern, every number in a card is in allowed_numbers, the referee model finds no must_not_say statement in any published card or test, and at least 2 of the 3 should_cover ideas are in the published cards."
+}

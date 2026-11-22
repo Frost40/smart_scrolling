@@ -1,0 +1,139 @@
+{
+  "id": "sample-spacing-study",
+  "kind": "paper",
+  "is_sample": true,
+  "status": "published",
+  "title": "Spacing practice in a toy study (sample)",
+  "authors": [
+    "B. Example",
+    "C. Placeholder"
+  ],
+  "published_on": "2024-05-10",
+  "description": "A made-up paper for testing the app. It compares cramming with spaced practice in an invented class.",
+  "link": "https://example.com/sample-spacing-study",
+  "topics": [
+    "psychology",
+    "learning-and-memory",
+    "mathematics"
+  ],
+  "cover": "cover.png",
+  "paper": {
+    "doi": "10.0000/sample.0001",
+    "journal": "Journal of Sample Studies",
+    "paper_status": "published"
+  },
+  "discover_cards": [
+    {
+      "id": "study-question",
+      "format": "research",
+      "title": "The question",
+      "front": "Does spreading the same practice over days help more than doing it all at once?",
+      "location": "Introduction",
+      "level": "intro"
+    },
+    {
+      "id": "method",
+      "format": "research",
+      "title": "How it was tested",
+      "front": "Two invented groups practised the same 40 words: one in one session, one in four short sessions.",
+      "back": "Everyone took the same test a week later.",
+      "location": "Method"
+    },
+    {
+      "id": "main-result",
+      "format": "research",
+      "title": "What they found",
+      "front": "The spaced group remembered about twice as many words a week later.",
+      "back": "Both groups did equally well on a test right after practice.",
+      "location": "Results",
+      "level": "intermediate"
+    },
+    {
+      "id": "why-spacing-works",
+      "format": "concept",
+      "title": "Why spacing works",
+      "front": "A little forgetting between sessions makes each review work harder, and harder work lasts longer.",
+      "location": "Discussion",
+      "related": [
+        "sample-curious-learner/forgetting-curve"
+      ]
+    },
+    {
+      "id": "limits",
+      "format": "research",
+      "title": "Limits of the study",
+      "front": "The toy study had one class and one kind of material, so the result may not hold everywhere.",
+      "location": "Limitations",
+      "level": "advanced",
+      "status": "draft"
+    },
+    {
+      "id": "cramming-myth",
+      "format": "myth",
+      "title": "Cramming works best",
+      "front": "Cramming the night before is the best way to remember.",
+      "back": "Cramming helps the next day's test but fades fast; spacing lasts longer.",
+      "location": "Discussion"
+    },
+    {
+      "id": "effect-size",
+      "format": "concept",
+      "title": "How big is the effect?",
+      "front": "An effect size says how big a difference is, not only whether it exists.",
+      "location": "Results",
+      "level": "advanced",
+      "topics": [
+        "mathematics"
+      ]
+    }
+  ],
+  "practice_cards": [
+    {
+      "id": "main-result-choice",
+      "type": "multiple_choice",
+      "prompt": "A week later, which group remembered more words?",
+      "choices": [
+        "The one-session group",
+        "The four-session group",
+        "Both the same"
+      ],
+      "correct_choice": 1,
+      "tests": [
+        "main-result"
+      ]
+    },
+    {
+      "id": "main-result-flash",
+      "type": "flashcard",
+      "prompt": "What changed between the two groups right after practice?",
+      "answer": "Nothing: they only differed a week later.",
+      "tests": [
+        "main-result"
+      ]
+    },
+    {
+      "id": "main-result-order",
+      "type": "ordering",
+      "prompt": "Put the steps of the study in order.",
+      "correct_order": [
+        "Ask the question",
+        "Split into two groups",
+        "Practise the words",
+        "Test a week later"
+      ],
+      "tests": [
+        "method",
+        "main-result"
+      ]
+    },
+    {
+      "id": "cramming-tf",
+      "type": "true_false",
+      "prompt": "Cramming gives the longest-lasting memory.",
+      "is_true": false,
+      "tests": [
+        "cramming-myth"
+      ]
+    }
+  ]
+}

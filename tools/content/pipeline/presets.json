@@ -1,0 +1,117 @@
+{
+  "claude": {
+    "cmd": [
+      "claude",
+      "-p",
+      "--model",
+      "{model}",
+      "--output-format",
+      "json",
+      "--tools",
+      "",
+      "--strict-mcp-config",
+      "--disable-slash-commands",
+      "--setting-sources",
+      "",
+      "--no-session-persistence",
+      "--system-prompt",
+      "{system}",
+      "--json-schema",
+      "{schema}"
+    ],
+    "stdin": "user",
+    "result": "json:structured_output",
+    "tokens": {
+      "in": "usage.input_tokens",
+      "out": "usage.output_tokens"
+    },
+    "env_remove": [
+      "ANTHROPIC_API_KEY",
+      "CLAUDECODE",
+      "CLAUDE_CODE_ENTRYPOINT"
+    ],
+    "limit_words": [
+      "usage limit",
+      "session limit",
+      "rate limit",
+      "429"
+    ]
+  },
+  "codex": {
+    "cmd": [
+      "codex",
+      "exec",
+      "--sandbox",
+      "read-only",
+      "--skip-git-repo-check",
+      "--ephemeral",
+      "--output-schema",
+      "{schema_file}",
+      "-o",
+      "{out_file}",
+      "-"
+    ],
+    "stdin": "both",
+    "result": "file",
+    "limit_words": [
+      "usage limit",
+      "rate limit",
+      "429"
+    ]
+  },
+  "agy": {
+    "cmd": [
+      "agy",
+      "-p={prompt}",
+      "--model",
+      "{model}",
+      "--output-format",
+      "json",
+      "--json-schema",
+      "{schema_file}",
+      "--sandbox",
+      "--disable-slash-commands",
+      "--print-timeout",
+      "240s"
+    ],
+    "stdin": "none",
+    "result": "json:structured_output",
+    "tokens": {
+      "in": "usage.input_tokens",
+      "out": "usage.output_tokens"
+    },
+    "limit_words": [
+      "quota",
+      "rate limit",
+      "429"
+    ]
+  },
+  "agy-stream": {
+    "cmd": [
+      "agy",
+      "--input-format",
+      "stream-json",
+      "--output-format",
+      "stream-json",
+      "--model",
+      "{model}",
+      "--json-schema",
+      "{schema_file}",
+      "--sandbox",
+      "--disable-slash-commands",
+      "--print-timeout",
+      "240s"
+    ],
+    "stdin": "stream-json",
+    "result": "json:result.structured_output",
+    "tokens": {
+      "in": "result.usage.input_tokens",
+      "out": "result.usage.output_tokens"
+    },
+    "limit_words": [
+      "quota",
+      "rate limit",
+      "429"
+    ]
+  }
+}

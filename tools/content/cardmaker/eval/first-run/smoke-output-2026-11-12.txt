@@ -1,0 +1,212 @@
+
+=== IDEAS ===
+{
+ "ref": "04:0",
+ "importance": 4,
+ "stance": "rejects",
+ "kind": "myth",
+ "title": "Multitasking as brain training myth",
+ "claim": "The belief that the brain grows stronger the more tasks it carries at once, so people who cannot juggle several jobs are out of training, is wrong.",
+ "support": "Dale Hobbs, a management writer, promoted this idea to office workers in the 1990s, but his claim was never tested. When Marta Ruiz and Tomas Lind tested doing two jobs at once, the second group took 40 percent longer and made about twice as many errors.",
+ "limits": "The test was on desk work by adults over one afternoon; it did not cover drivers, surgeons or children.",
+ "paragraphs": [
+  "P1",
+  "P2"
+ ],
+ "evidence_quote": "The second group took 40 percent longer to finish and made about twice as many errors.",
+ "quote_text": "",
+ "speaker": ""
+}
+EVIDENCE GATE: pass
+{
+ "ref": "04:1",
+ "importance": 4,
+ "stance": "claims",
+ "kind": "research",
+ "title": "Doing two jobs at once study",
+ "claim": "When office workers had to proofread text and answer sums at the same time, they were slower and less accurate than when they did the two jobs one after the other.",
+ "support": "In 2009 Marta Ruiz and her colleague Tomas Lind gave 212 adult office workers two ordinary jobs, with half doing them in sequence and half doing them together. The simultaneous group took 40 percent longer and made about twice as many errors.",
+ "limits": "Lind thought the extra errors came mostly from the sums being read too fast. The study covered desk work by adults in a single afternoon.",
+ "paragraphs": [
+  "P2"
+ ],
+ "evidence_quote": "The second group took 40 percent longer to finish and made about twice as many errors.",
+ "quote_text": "",
+ "speaker": ""
+}
+EVIDENCE GATE: pass
+{
+ "ref": "04:2",
+ "importance": 5,
+ "stance": "claims",
+ "kind": "concept",
+ "title": "Switch cost paid unnoticed",
+ "claim": "Every switch between jobs has a hidden cost, paid in seconds and mistakes, that the person switching does not feel.",
+ "support": "Ruiz called this cost the switch cost. People can switch quickly, but each switch still takes time and creates errors that go unnoticed by the person making it.",
+ "limits": "Her result came from desk work done by adults in a single afternoon, so the cost was not measured for drivers, surgeons or children.",
+ "paragraphs": [
+  "P3"
+ ],
+ "evidence_quote": "It is that every switch has a price, paid in seconds and in mistakes, and that the person paying it does not feel the bill.",
+ "quote_text": "",
+ "speaker": ""
+}
+EVIDENCE GATE: pass
+{
+ "ref": "04:3",
+ "importance": 4,
+ "stance": "claims",
+ "kind": "research",
+ "title": "Multitaskers overrate their performance",
+ "claim": "People who do two jobs at once tend to judge their own work as better than people who did one job at a time, even when their work is worse.",
+ "support": "After the experiment, the people who had done both jobs together rated their own performance higher than those who worked on one job at a time. This was the surprising part of the result, since the same group made about twice as many errors.",
+ "limits": "Shown in one study of office workers doing two simple jobs.",
+ "paragraphs": [
+  "P2"
+ ],
+ "evidence_quote": "When asked afterwards, the people who had done both at once rated their own performance higher than the people who had worked on one job at a time.",
+ "quote_text": "",
+ "speaker": ""
+}
+EVIDENCE GATE: pass
+{
+ "ref": "04:4",
+ "importance": 3,
+ "stance": "claims",
+ "kind": "research",
+ "title": "Second job, not noise, harms",
+ "claim": "Background noise such as soft music does not slow work or add errors; the second task itself is what causes the damage.",
+ "support": "In a smaller follow-up with 48 people, soft background music made no measurable difference to speed or errors. The authors concluded that the second job, not the noise, caused the harm.",
+ "limits": "Based on a smaller follow-up with 48 people, and only soft background music was tested.",
+ "paragraphs": [
+  "P6"
+ ],
+ "evidence_quote": "It was the second job, not the noise, that did the damage.",
+ "quote_text": "",
+ "speaker": ""
+}
+EVIDENCE GATE: pass
+
+=== SELECT ===
+ {"chosen": [{"ref": "04:0", "format": "myth", "level": "intro"}, {"ref": "04:1", "format": "research", "level": "intro"}, {"ref": "04:2", "format": "concept", "level": "intro"}, {"ref": "04:3", "format": "research", "level": "intermediate"}, {"ref": "04:4", "format": "research", "level": "intermediate"}], "duplicates": [], "topics": ["psychology"], "new_topic": ""}
+
+=== CARDS ===
+{
+ "ref": "04:0",
+ "title": "Multitasking as brain training myth",
+ "front": "Doing many jobs at once makes the brain grow stronger, so people who cannot juggle several tasks are out of training.",
+ "back": "The management writer Dale Hobbs promoted this idea in the 1990s, but the claim was never tested. When the researchers Marta Ruiz and Tomas Lind tested two jobs at once in 2009, the group doing both together took 40 percent longer and made about twice as many errors. The test covered desk work by adults in a single afternoon, not drivers, surgeons or children.",
+ "format": "myth"
+} 
+CODE GATES: pass
+{
+ "ref": "04:1",
+ "title": "Two jobs together slowed work",
+ "front": "When office workers had to proofread text and answer sums at the same time, they were slower and less accurate than when they did the jobs in turn.",
+ "back": "In 2009 the researcher Marta Ruiz and her colleague Tomas Lind gave 212 adult office workers the two jobs, with half doing them one after the other. The group doing both at once took 40 percent longer and made about twice as many errors. Lind thought the extra errors came mostly from the sums being read too fast, and the study covered desk work by adults in a single afternoon.",
+ "format": "research"
+} 
+CODE GATES: ['12 words copied']
+{
+ "ref": "04:2",
+ "title": "Switch cost paid unnoticed",
+ "front": "Every switch between jobs carries a hidden cost, paid in seconds and mistakes, that the person switching does not feel.",
+ "back": "The researcher Marta Ruiz called this cost the switch cost. People can switch between jobs quickly, but each switch still takes time and creates errors that the person making it does not notice. Her result came from desk work by adults in one afternoon, so the cost was not measured for drivers, surgeons or children.",
+ "format": "concept"
+} 
+CODE GATES: pass
+{
+ "ref": "04:3",
+ "title": "Multitaskers overrate their performance",
+ "front": "People who did two jobs at once rated their own work higher than people who did one job at a time, even though their work was worse.",
+ "back": "In the 2009 study by the researcher Marta Ruiz and her colleague Tomas Lind, the people who had done both jobs together gave themselves higher ratings afterwards. The same group had taken 40 percent longer and made about twice as many errors. The finding comes from one study of office workers doing two simple jobs.",
+ "format": "research"
+} 
+CODE GATES: pass
+{
+ "ref": "04:4",
+ "title": "Second job, not noise, harms",
+ "front": "In a smaller follow-up study, soft background music did not slow work or add errors, so the second job itself caused the harm.",
+ "back": "The follow-up involved 48 people, and only soft background music was tested. The researchers concluded that the second job, not the noise, did the damage.",
+ "format": "research"
+} 
+CODE GATES: pass
+
+=== JUDGE ===
+{
+ "ref": "04:0",
+ "notes": "Front: Hobbs's claim (brain grows stronger with more tasks; those who can't juggle are out of training) - supported. Back: Hobbs management writer, 1990s, never tested - supported. Ruiz and Lind 2009, two jobs, 40% longer, twice errors - supported. Scope: desk work, adults, single afternoon, not drivers, surgeons, children - supported. 'Tested two jobs at once' fine. Standalone: Ruiz and Lind are described as researchers; the test is explained loosely ('the group doing both together' versus whom? implied). Acceptable.",
+ "supported": true,
+ "faithful": true,
+ "standalone": true,
+ "complete": true,
+ "one_idea": true,
+ "worth": true,
+ "problem": "",
+ "fix": ""
+} 
+VERDICT: pass
+{
+ "ref": "04:2",
+ "notes": "Switch cost: every switch has a price in seconds and mistakes, not felt - supported. Ruiz named it - supported. People can switch quickly - supported. Scope limits - supported. However, the text says the 'not felt' part; card says 'creates errors that the person making it does not notice' - roughly the same as 'does not feel the bill'. The card says 'the cost was not measured for drivers...' - text says 'not tested'; fine. Fine overall.",
+ "supported": true,
+ "faithful": true,
+ "standalone": true,
+ "complete": true,
+ "one_idea": true,
+ "worth": true,
+ "problem": "",
+ "fix": ""
+} 
+VERDICT: pass
+{
+ "ref": "04:3",
+ "notes": "Front: the both-at-once group rated themselves higher, work was worse (longer, more errors) - supported. Back: 2009 study by Ruiz and Lind - supported; 40%, twice errors - supported; one study of office workers doing two simple jobs - supported. Standalone: 'two jobs' is vague but the back explains it as simple jobs; acceptable.",
+ "supported": true,
+ "faithful": true,
+ "standalone": true,
+ "complete": true,
+ "one_idea": true,
+ "worth": true,
+ "problem": "",
+ "fix": ""
+} 
+VERDICT: pass
+{
+ "ref": "04:4",
+ "notes": "Smaller follow-up with 48 people, soft background music made no measurable difference to speed or errors; second job did the damage - supported. Standalone problem: 'In a smaller follow-up study' - smaller than what and follow-up to what is not given; 'the second job' has no referent; the card never says what the original study was. 'The researchers' unnamed.",
+ "supported": true,
+ "faithful": true,
+ "standalone": false,
+ "complete": true,
+ "one_idea": true,
+ "worth": true,
+ "problem": "The front says \"a smaller follow-up study\" and \"the second job\" without saying what the original study was (people doing two tasks at once); a reader cannot tell what the follow-up followed or what the second job is.",
+ "fix": "Add context: after a study finding that doing two jobs at once slowed work and added errors, a 48-person follow-up found soft background music had no effect, so the second job caused the harm."
+} 
+VERDICT: FAIL
+
+=== TESTS ===
+{"card": "04:0", "type": "flashcard", "prompt": "Does doing many jobs at once strengthen the brain, and what did the 2009 test by Marta Ruiz and Tomas Lind find?", "answer": "No. The belief that juggling jobs trains the brain is a myth that was never tested until 2009, when the test found that doing two jobs together took 40 percent longer and caused about twice as many errors.", "choices": [], "correct_choice": 0, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The belief is that multitasking builds brain strength, while the fact from the 2009 test is that it slowed people down and increased their errors.", "id": "t0"}
+{"card": "04:0", "type": "multiple_choice", "prompt": "A friend says that juggling several jobs at once trains the brain, so people who cannot do it are missing out. What did the 2009 test actually show about doing two jobs together?", "answer": "", "choices": ["Doing two jobs together made people finish about 40 percent faster", "Doing two jobs together took about 40 percent longer and caused about twice as many errors", "Doing two jobs together halved the number of errors people made", "Doing two jobs together made no difference to speed or accuracy"], "correct_choice": 1, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The 2009 test found that doing two jobs together took about 40 percent longer and produced about twice as many errors, which contradicts the belief that it trains the brain.", "id": "t1"}
+{"card": "04:0", "type": "true_false", "prompt": "The belief that doing many jobs at once makes the brain stronger was confirmed by Marta Ruiz and Tomas Lind in their 2009 test.", "answer": "", "choices": [], "correct_choice": 0, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The 2009 test found that doing two jobs together took longer and caused more errors, so it did not confirm the belief.", "id": "t2"}
+{"card": "04:2", "type": "flashcard", "prompt": "What is the hidden cost people pay each time they switch between jobs, and why do they not notice it?", "answer": "It is called the switch cost, and it is paid in seconds and mistakes. People do not notice it because they do not feel the time and errors that each switch creates.", "choices": [], "correct_choice": 0, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The switch cost is a delay and set of errors created by each switch that the person making the switch does not feel.", "id": "t3"}
+{"card": "04:2", "type": "multiple_choice", "prompt": "A person cooking dinner glances at a message on their phone, returns to the stove, and feels no slowdown at all. What does the switch cost idea suggest is probably happening?", "answer": "", "choices": ["The brain has stopped needing any time to change between tasks", "The switch still takes time and can cause errors that the person does not feel", "Ignoring the message means no switch has taken place at all", "Switching costs only add up when both tasks are very difficult"], "correct_choice": 1, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "Under the switch cost idea, each switch takes time and can create errors even when the person does not feel any slowdown.", "id": "t4"}
+{"card": "04:2", "type": "true_false", "prompt": "Each switch between two jobs costs some time and can create errors, even when the person switching does not notice the cost.", "answer": "", "choices": [], "correct_choice": 0, "is_true": true, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The card says each switch carries a hidden cost in seconds and mistakes that the person switching does not feel.", "id": "t5"}
+{"card": "04:3", "type": "flashcard", "prompt": "How did people who did two jobs at once rate their own work compared with people who did one job at a time, and how did their work actually compare?", "answer": "They rated their own work higher, even though their work was worse. In the 2009 study, that group took 40 percent longer and made about twice as many errors.", "choices": [], "correct_choice": 0, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The people who multitasked gave themselves higher ratings even though their results were worse than those of people working on one job at a time.", "id": "t6"}
+{"card": "04:3", "type": "multiple_choice", "prompt": "After doing two jobs at once in a study, a worker gives herself a high score for her work. What does the research suggest about that self-rating?", "answer": "", "choices": ["It is a reliable sign that her work was accurate and fast", "It is probably higher than her actual performance, because people who multitask rate their own work above its real quality", "It shows she finished faster than people who did only one job", "It reflects that the second job was easier than the first one"], "correct_choice": 1, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The research found that people who did two jobs together rated their own work higher even though it was worse, so a high self-rating can overstate real performance.", "id": "t7"}
+{"card": "04:3", "type": "true_false", "prompt": "People who did two jobs at once in the 2009 study rated their own work lower than people who did one job at a time.", "answer": "", "choices": [], "correct_choice": 0, "is_true": false, "correct_order": [], "match_left": [], "match_right": [], "explanation": "The multitaskers gave themselves higher ratings afterwards, even though their work was worse.", "id": "t8"}
+
+=== SOLVE ===
+unclear: []
+t0 flashcard answerable: True key agrees: None | flashcard answer: No; the claim was never tested when promoted. In the 2009 test, the group doing two jobs together took 40 percent longer and made about twice as many errors.
+t1 multiple_choice answerable: True key agrees: True  
+t2 true_false answerable: True key agrees: True  
+t3 flashcard answerable: True key agrees: None | flashcard answer: The switch cost: each switch takes some seconds and creates errors. People do not notice it because it is hidden and the person switching does not feel it.
+t4 multiple_choice answerable: True key agrees: True  
+t5 true_false answerable: True key agrees: True  
+t6 flashcard answerable: True key agrees: None | flashcard answer: Those who did two jobs at once rated their own work higher, even though their work was worse: they took 40 percent longer and made about twice as many errors.
+t7 multiple_choice answerable: True key agrees: True  
+t8 true_false answerable: True key agrees: True  
+
+CALLS (step, model, seconds, output tokens): [('extract', 'haiku', 15.4, 3331), ('select', 'haiku', 5.4, 795), ('write', 'haiku', 14.8, 3493), ('judge', 'sonnet', 9.8, 1011), ('quiz', 'haiku', 20.2, 4443), ('solve', 'sonnet', 5.8, 611)]

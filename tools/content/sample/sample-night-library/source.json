@@ -1,0 +1,86 @@
+{
+  "id": "sample-night-library",
+  "kind": "news",
+  "is_sample": true,
+  "status": "published",
+  "title": "City library opens a night reading room (sample)",
+  "authors": [
+    "D. Reporter"
+  ],
+  "published_on": "2026-10-29",
+  "description": "A made-up news article for testing the app.",
+  "link": "https://example.com/sample-night-library",
+  "topics": [
+    "society",
+    "culture"
+  ],
+  "news": {
+    "newspaper": "The Sample Times",
+    "show_until": "2027-12-31"
+  },
+  "discover_cards": [
+    {
+      "id": "night-room-opens",
+      "format": "news",
+      "title": "A reading room open at night",
+      "front": "The invented city library now keeps one reading room open until 2 a.m.",
+      "level": "intro"
+    },
+    {
+      "id": "who-uses-it",
+      "format": "news",
+      "title": "Who comes at night",
+      "front": "In the first month, most night visitors were students and shift workers."
+    },
+    {
+      "id": "librarian-quote",
+      "format": "quote",
+      "title": "Quiet hours",
+      "front": "People told us the night is the only quiet time they have.",
+      "speaker": "Rosa Example, librarian"
+    },
+    {
+      "id": "costs",
+      "format": "news",
+      "title": "What it costs",
+      "front": "The extra hours cost the library about as much as one new staff member.",
+      "level": "intro"
+    },
+    {
+      "id": "other-cities",
+      "format": "news",
+      "title": "Other cities",
+      "front": "Two other invented cities plan to try night rooms next year."
+    }
+  ],
+  "practice_cards": [
+    {
+      "id": "night-room-flash",
+      "type": "flashcard",
+      "prompt": "Until what time is the night reading room open?",
+      "answer": "Until 2 a.m.",
+      "tests": [
+        "night-room-opens"
+      ]
+    },
+    {
+      "id": "visitors-match",
+      "type": "matching",
+      "prompt": "Match each fact with the article.",
+      "match_left": [
+        "Closing time",
+        "Main visitors",
+        "Extra cost"
+      ],
+      "match_right": [
+        "2 a.m.",
+        "Students and shift workers",
+        "About one staff member"
+      ],
+      "tests": [
+        "night-room-opens",
+        "who-uses-it"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "sample-everyday-light",
+  "kind": "other",
+  "is_sample": true,
+  "status": "published",
+  "title": "Everyday light (sample website)",
+  "authors": [
+    "Theo Placeholder"
+  ],
+  "description": "A made-up website for testing the app. Short notes about light in daily life.",
+  "link": "https://example.com/everyday-light",
+  "topics": [
+    "physics",
+    "optics",
+    "everyday-physics"
+  ],
+  "discover_cards": [
+    {
+      "id": "prism-colors",
+      "format": "image",
+      "title": "White light holds every color",
+      "front": "A prism bends each color by a different amount, so white light fans out into a band.",
+      "media": "cards/prism-colors/image.png",
+      "media_alt": "A white strip above a band of colors running from red through green and blue to violet.",
+      "level": "intro",
+      "related": [
+        "rainbow-order"
+      ]
+    },
+    {
+      "id": "why-sky-blue",
+      "format": "concept",
+      "title": "Why the sky is blue",
+      "front": "Air scatters blue light much more than red light, so blue reaches your eyes from every part of the sky."
+    },
+    {
+      "id": "sunset-red",
+      "format": "concept",
+      "title": "Why sunsets are red",
+      "front": "At sunset light crosses much more air, so most blue is scattered away and reds are left.",
+      "related": [
+        "why-sky-blue"
+      ],
+      "level": "intermediate"
+    },
+    {
+      "id": "dark-adaptation",
+      "format": "research",
+      "title": "Seeing in the dark",
+      "front": "Eyes need about 20 to 30 minutes to adjust fully to darkness.",
+      "back": "One look at a bright screen resets part of that.",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "carrots-myth",
+      "format": "myth",
+      "title": "Carrots and night vision",
+      "front": "Eating lots of carrots lets you see in the dark.",
+      "back": "Carrots help only if you lack vitamin A; extra carrots do not add night vision."
+    },
+    {
+      "id": "light-speed",
+      "format": "concept",
+      "title": "How fast is light?",
+      "front": "Light travels about 300,000 km every second: around the Earth seven times.",
+      "level": "intro"
+    },
+    {
+      "id": "physicist-quote",
+      "format": "quote",
+      "title": "Look up",
+      "front": "Every color you see is light that something did not keep.",
+      "speaker": "Theo Placeholder"
+    },
+    {
+      "id": "rainbow-order",
+      "format": "concept",
+      "title": "The order of a rainbow",
+      "front": "A rainbow always shows red on the outside and violet on the inside.",
+      "level": "intro"
+    }
+  ],
+  "practice_cards": [
+    {
+      "id": "rainbow-ordering",
+      "type": "ordering",
+      "prompt": "Put the rainbow colors in order, from the outside in.",
+      "correct_order": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue",
+        "Violet"
+      ],
+      "tests": [
+        "rainbow-order",
+        "prism-colors"
+      ]
+    },
+    {
+      "id": "sky-choice",
+      "type": "multiple_choice",
+      "prompt": "Why is the sky blue?",
+      "choices": [
+        "It reflects the sea",
+        "Air scatters blue light the most",
+        "Blue light is the fastest"
+      ],
+      "correct_choice": 1,
+      "explanation": "Scattering is strongest for blue light.",
+      "tests": [
+        "why-sky-blue",
+        "sunset-red"
+      ]
+    },
+    {
+      "id": "carrots-tf",
+      "type": "true_false",
+      "prompt": "Extra carrots give you night vision.",
+      "is_true": false,
+      "tests": [
+        "carrots-myth"
+      ]
+    },
+    {
+      "id": "light-flash",
+      "type": "flashcard",
+      "prompt": "About how far does light travel in one second?",
+      "answer": "About 300,000 km.",
+      "tests": [
+        "light-speed"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resultList": {
+    "result": [
+      {
+        "id": "42685739",
+        "source": "MED",
+        "pmcid": "PMC7619672",
+        "doi": "10.1016/j.lanmic.2026.101466",
+        "title": "WHO target product profiles for dengue therapeutics: an interdisciplinary analysis of ethical, regulatory, and implementation considerations.",
+        "authorString": "Johnson T, Loganathan S, Jamrozik E, Parker MJ, Chan XHS.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Johnson T"
+            },
+            {
+              "fullName": "Loganathan S"
+            },
+            {
+              "fullName": "Jamrozik E"
+            },
+            {
+              "fullName": "Parker MJ"
+            },
+            {
+              "fullName": "Chan XHS"
+            }
+          ]
+        },
+        "journalInfo": {
+          "journalIssueId": 4212508,
+          "dateOfPublication": "2027 May",
+          "monthOfPublication": 5,
+          "yearOfPublication": 2027,
+          "journal": {
+            "medlineAbbreviation": "Lancet Microbe",
+            "title": "The Lancet. Microbe",
+            "essn": "2666-5247",
+            "issn": "2666-5247",
+            "nlmid": "101769019",
+            "isoabbreviation": "Lancet Microbe"
+          },
+          "printPublicationDate": "2027-05-01"
+        },
+        "abstractText": "Dengue, a mosquito-borne viral disease, is undergoing its largest surge in history, driven by climate and demographic changes. Expanding transmission has highlighted previously under-recognised populations at heightened risk of severe disease, including people with multimorbidity and immunosuppression, for whom live-attenuated vaccines are contraindicated or unlicensed. This evolving epidemiology underscores the urgent need for safe and effective treatments for dengue, particularly for those with complex risk profiles compounded by socioeconomic disadvantage. We examined ethical, regulatory, and implementation considerations to support WHO target product profile development for dengue therapeutics. Our analysis highlights the need for better characterisation of groups at risk through approaches such as enhanced surveillance; co-produced approaches for the inclusion of these groups in research prioritisation, trials, and care; and strategies to address key barriers to access for all, such as rapid diagnostics. This framework can potentially inform equitable development and delivery of countermeasures for other infectious disease threats to global health.",
+        "license": "cc by",
+        "firstPublicationDate": "2027-05-19"
+      }
+    ]
+  }
+}

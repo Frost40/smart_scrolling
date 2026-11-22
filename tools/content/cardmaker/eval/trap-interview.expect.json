@@ -1,0 +1,42 @@
+{
+  "_about": "What a correct run on trap-interview.txt must and must not produce. The passage is made up: the town, the trial and the people do not exist. Never upload it.",
+  "source": {"kind": "book", "title": "Working Less (made-up test text)", "authors": ["Test Author"], "is_sample": true},
+  "brief": {
+    "thesis": "Shorter working weeks are being tried in many places, and their early results are read in opposite ways. The book sets out the claims for and against a four-day week and what each trial can and cannot show, without taking a side.",
+    "outline": [
+      {"part": 6, "heading": "Where the idea came from", "gist": "Early campaigns for a shorter working week."},
+      {"part": 7, "heading": "Two Views of the Four-Day Week", "gist": "An economist and a business owner disagree about one town's trial."},
+      {"part": 8, "heading": "Designing a fair trial", "gist": "What a trial needs in order to settle the question."}
+    ],
+    "glossary": [],
+    "people": []
+  },
+  "traps": [
+    "P2: Ingrid Moe's claims (output per hour rose, sick days fell by a third, long weeks waste time) are her view, reported, not the text's finding.",
+    "P3: Paul Asante's claim that the gain was borrowed from later work is also only his view.",
+    "P1 and P6: the writer sides with neither; a card must not say who is right.",
+    "P4: each side's answer to the other is reported; the outside firm's checks are described by Moe, and their weakness by Asante.",
+    "P5: 9 in 10 participants wanted to keep the shorter week: the one point both accept. 90 percent is not a number in the text.",
+    "P6: limits: six months, offices only, no comparison with five-day offices.",
+    "P1, P2: 'told me', 'sat down with me': interview talk that must not reach a card."
+  ],
+  "forbidden_patterns": ["the author", "the text\\b", "this chapter", "told me", "with me", "the interview"],
+  "allowed_numbers": ["2021", "64", "9", "10"],
+  "must_not_say": [
+    "A four-day week raises output per hour (stated as a fact instead of as Ingrid Moe's view).",
+    "Sick days fell by a third in the trial (stated as a fact instead of as Ingrid Moe's claim).",
+    "The rise in output came from pushing hard work into the next quarter (stated as a fact instead of as Paul Asante's view).",
+    "The trial proved that long working weeks waste time.",
+    "The trial proved that a four-day week does not pay for itself.",
+    "The offices in the trial were compared with offices that kept the five-day week.",
+    "The writer agrees with Ingrid Moe, or with Paul Asante.",
+    "The outside firm found that the work was done as well as before."
+  ],
+  "should_cover": [
+    {"idea": "Ingrid Moe's reading: the trial worked, output per hour rose (as her view)", "any_of": ["Ingrid Moe"]},
+    {"idea": "Paul Asante's reading: the gain was borrowed from later work (as his view)", "any_of": ["Paul Asante"]},
+    {"idea": "9 in 10 participants wanted to keep the shorter week", "any_of": ["9 in 10", "nine in ten", "keep the shorter week"]},
+    {"idea": "the trial's limits: six months, offices only, no comparison group", "any_of": ["six months", "compare", "comparison"]}
+  ],
+  "pass_rule": "No card or test (wrong answer choices aside) matches a forbidden pattern, every number in a card is in allowed_numbers, the referee model finds no must_not_say statement in any published card or test, and at least 2 of the 4 should_cover ideas are in the published cards."
+}

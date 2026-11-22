@@ -1,0 +1,227 @@
+{
+  "id": "sample-curious-learner",
+  "kind": "book",
+  "is_sample": true,
+  "status": "published",
+  "title": "The Curious Learner (sample)",
+  "authors": [
+    "Ada Sample"
+  ],
+  "published_on": "2020-03-01",
+  "language": "en",
+  "description": "A made-up book for testing the app. It explains simple study habits in short chapters.",
+  "topics": [
+    "psychology",
+    "learning-and-memory"
+  ],
+  "cover": "cover.png",
+  "original": "original.txt",
+  "text": "text.txt",
+  "book": {
+    "publisher": "Sample Press",
+    "edition": "1st edition",
+    "pages": 120
+  },
+  "discover_cards": [
+    {
+      "id": "curiosity-gap",
+      "format": "concept",
+      "title": "The curiosity gap",
+      "front": "We want to learn most when we notice a small gap between what we know and what we want to know.",
+      "back": "Asking a question before reading opens that gap on purpose.",
+      "location": "Chapter 1, p. 4",
+      "level": "intro",
+      "topics": [
+        "habits"
+      ],
+      "related": [
+        "teach-to-learn",
+        "sample-spacing-study/why-spacing-works"
+      ]
+    },
+    {
+      "id": "learner-quote",
+      "format": "quote",
+      "title": "Start with a question",
+      "front": "A good question is a hook: the answer has something to hold on to.",
+      "speaker": "Ada Sample",
+      "location": "Chapter 1, p. 9"
+    },
+    {
+      "id": "ten-percent-myth",
+      "format": "myth",
+      "title": "The 10% brain myth",
+      "front": "We only use 10% of our brains.",
+      "back": "Brain scans show activity all over the brain during a normal day; no large part sits unused.",
+      "location": "Chapter 2, p. 15",
+      "level": "intro",
+      "topics": [
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "forgetting-curve",
+      "format": "image",
+      "title": "The forgetting curve",
+      "front": "Memory fades fast after learning, and each review makes it fade more slowly.",
+      "back": "The picture shows three drops in memory, each one gentler after a review.",
+      "media": "cards/forgetting-curve/image.png",
+      "media_alt": "A line chart: a curve falls quickly, then restarts higher twice, each time falling more slowly.",
+      "location": "Chapter 3, p. 22",
+      "level": "intermediate"
+    },
+    {
+      "id": "retrieval-practice",
+      "format": "concept",
+      "title": "Testing yourself",
+      "front": "Trying to remember something makes the memory stronger than reading it again.",
+      "back": "Close the book and write what you remember, then check.",
+      "location": "Chapter 3, p. 27",
+      "level": "intermediate"
+    },
+    {
+      "id": "learning-styles-myth",
+      "format": "myth",
+      "title": "Learning styles",
+      "front": "People learn best when lessons match their personal learning style.",
+      "back": "Studies that tested this found no benefit from matching lessons to a preferred style.",
+      "location": "Chapter 4, p. 35"
+    },
+    {
+      "id": "sleep-and-memory",
+      "format": "concept",
+      "title": "Sleep keeps what you learned",
+      "front": "During sleep the brain replays and stores what you learned that day.",
+      "back": "A night of sleep after studying helps more than an extra hour of study.",
+      "location": "Chapter 5, p. 41",
+      "topics": [
+        "neuroscience",
+        "health"
+      ]
+    },
+    {
+      "id": "interleaving",
+      "format": "concept",
+      "title": "Mix your practice",
+      "front": "Mixing different kinds of problems feels harder but teaches you to choose the right method.",
+      "back": "Practise A, B, C, A, C, B instead of A, A, A, B, B, B.",
+      "location": "Chapter 6, p. 52",
+      "level": "advanced"
+    },
+    {
+      "id": "small-goals-quote",
+      "format": "quote",
+      "title": "Small steps",
+      "front": "Ten minutes today beats an hour someday.",
+      "speaker": "Ada Sample",
+      "location": "Chapter 7, p. 60"
+    },
+    {
+      "id": "teach-to-learn",
+      "format": "concept",
+      "title": "Teach it to learn it",
+      "front": "Explaining an idea to someone else shows you which parts you do not understand yet.",
+      "back": "Try explaining it in plain words to a friend, or to an empty chair.",
+      "location": "Chapter 8, p. 71",
+      "level": "intro"
+    }
+  ],
+  "practice_cards": [
+    {
+      "id": "recall-flash",
+      "type": "flashcard",
+      "prompt": "Why does testing yourself help you remember?",
+      "answer": "Pulling a memory out makes it stronger than reading it again.",
+      "tests": [
+        "retrieval-practice"
+      ]
+    },
+    {
+      "id": "recall-choice",
+      "type": "multiple_choice",
+      "prompt": "Which way of studying builds the strongest memory?",
+      "choices": [
+        "Reading the chapter again",
+        "Highlighting the key lines",
+        "Closing the book and recalling it",
+        "Copying the notes"
+      ],
+      "correct_choice": 2,
+      "explanation": "Recalling from memory is a test, and tests strengthen memories.",
+      "tests": [
+        "retrieval-practice"
+      ]
+    },
+    {
+      "id": "recall-true-false",
+      "type": "true_false",
+      "prompt": "Reading a text twice helps more than trying to recall it once.",
+      "is_true": false,
+      "explanation": "Trying to recall it helps more.",
+      "tests": [
+        "retrieval-practice"
+      ]
+    },
+    {
+      "id": "myth-true-false",
+      "type": "true_false",
+      "prompt": "Most of the brain is unused on a normal day.",
+      "is_true": false,
+      "explanation": "Activity shows up all over the brain.",
+      "tests": [
+        "ten-percent-myth"
+      ]
+    },
+    {
+      "id": "study-order",
+      "type": "ordering",
+      "prompt": "Put this mixed practice plan in the order the chapter suggests.",
+      "correct_order": [
+        "Problem type A",
+        "Problem type B",
+        "Problem type C",
+        "Problem type A again"
+      ],
+      "tests": [
+        "interleaving"
+      ]
+    },
+    {
+      "id": "memory-match",
+      "type": "matching",
+      "prompt": "Match each learning habit with what it does.",
+      "match_left": [
+        "Retrieval practice",
+        "Sleep",
+        "Interleaving"
+      ],
+      "match_right": [
+        "Recall without looking",
+        "Replay and store memories",
+        "Mix different problem types"
+      ],
+      "explanation": "Recall strengthens memories, sleep stores them, and mixed problems practise choosing a method.",
+      "tests": [
+        "sleep-and-memory",
+        "interleaving"
+      ]
+    },
+    {
+      "id": "terms-match",
+      "type": "matching",
+      "prompt": "Match each idea with what it means.",
+      "match_left": [
+        "Curiosity gap",
+        "Teaching to learn"
+      ],
+      "match_right": [
+        "Noticing what you do not know yet",
+        "Explaining an idea to find your weak spots"
+      ],
+      "tests": [
+        "curiosity-gap",
+        "teach-to-learn"
+      ]
+    }
+  ]
+}

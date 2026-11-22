@@ -1,0 +1,26 @@
+{
+  "news": [
+    {
+      "story": "<!--Nov 12--><a rel=\"mw:WikiLink\" href=\"./Nvidia\" title=\"Nvidia\" id=\"mwBg\">Nvidia</a> CEO <b id=\"mwBw\"><a rel=\"mw:WikiLink\" href=\"./Jensen_Huang\" title=\"Jensen Huang\" id=\"mwCA\">Jensen Huang</a></b> <i id=\"mwCQ\"></i> resigns amidst allegations of <b id=\"mwCg\"><a rel=\"mw:WikiLink\" href=\"./Jensen_Huang_spying_scandal\" title=\"Jensen Huang spying scandal\" id=\"mwCw\">being targeted by a Chinese spy</a></b> and of having extramarital affairs.",
+      "links": [
+        {
+          "title": "Jensen_Huang",
+          "content_urls": {
+            "desktop": {
+              "page": "https://en.wikipedia.org/wiki/Jensen_Huang",
+              "revisions": "https://en.wikipedia.org/wiki/Jensen_Huang?action=history",
+              "edit": "https://en.wikipedia.org/wiki/Jensen_Huang?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Jensen_Huang"
+            },
+            "mobile": {
+              "page": "https://en.wikipedia.org/wiki/Jensen_Huang",
+              "revisions": "https://en.wikipedia.org/wiki/Special:History/Jensen_Huang",
+              "edit": "https://en.wikipedia.org/wiki/Jensen_Huang?action=edit",
+              "talk": "https://en.wikipedia.org/wiki/Talk:Jensen_Huang"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

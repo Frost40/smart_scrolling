@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280" role="img" aria-label="SmartScrolling — Replace aimless scrolling with short learning cards">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B545C"/>
+      <stop offset="55%" stop-color="#0F6E78"/>
+      <stop offset="100%" stop-color="#148692"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B5FC7"/>
+      <stop offset="16%" stop-color="#9A53B8"/>
+      <stop offset="32%" stop-color="#9E8B22"/>
+      <stop offset="48%" stop-color="#1D7EA8"/>
+      <stop offset="64%" stop-color="#5D9227"/>
+      <stop offset="80%" stop-color="#279253"/>
+      <stop offset="100%" stop-color="#1F907E"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#062C30" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Soft outer frame -->
+  <rect width="960" height="280" rx="24" fill="url(#bg)"/>
+
+  <!-- Subtle architectural grid lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="70" x2="960" y2="70"/>
+    <line x1="0" y1="140" x2="960" y2="140"/>
+    <line x1="0" y1="210" x2="960" y2="210"/>
+    <line x1="560" y1="0" x2="560" y2="280"/>
+    <line x1="760" y1="0" x2="760" y2="280"/>
+  </g>
+
+  <!-- Left editorial typography -->
+  <g transform="translate(52, 54)">
+    <rect x="0" y="0" width="166" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14"/>
+    <circle cx="14" cy="13" r="4" fill="#91D9BC"/>
+    <text x="26" y="17" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.8" fill="#E6F6F7">MICROLEARNING SHELL</text>
+
+    <text x="0" y="72" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="700" letter-spacing="-1.2" fill="#FFFFFF">SmartScrolling</text>
+
+    <text x="0" y="106" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" fill="#DCEFF1">Replace aimless scrolling with short, source-grounded</text>
+    <text x="0" y="131" font-family="Georgia, 'Times New Roman', serif" font-size="18.5" fill="#DCEFF1">learning cards and spaced-repetition practice.</text>
+
+    <!-- Bottom minimal pill metadata -->
+    <g transform="translate(0, 154)" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">
+      <rect x="0" y="0" width="84" height="24" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+      <text x="42" y="16" text-anchor="middle">Flutter 3.47</text>
+
+      <rect x="92" y="0" width="96" height="24" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+      <text x="140" y="16" text-anchor="middle">Supabase RLS</text>
+
+      <rect x="196" y="0" width="92" height="24" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+      <text x="242" y="16" text-anchor="middle">Offline Drift</text>
+
+      <rect x="296" y="0" width="114" height="24" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+      <text x="353" y="16" text-anchor="middle">6-Stage Pipeline</text>
+    </g>
+  </g>
+
+  <!-- Right mini Discover Card motif matching AppRadius.card=24 and 6px color band -->
+  <g transform="translate(572, 34)" filter="url(#shadow)">
+    <rect x="0" y="0" width="336" height="212" rx="22" fill="#FFFFFF"/>
+    <path d="M 22 0 H 314 A 22 22 0 0 1 336 22 V 6 H 0 V 22 A 22 22 0 0 1 22 0 Z" fill="url(#band)"/>
+
+    <!-- Format badge -->
+    <circle cx="34" cy="34" r="13" fill="#E8EEF9"/>
+    <circle cx="34" cy="34" r="5" fill="#4C56AF"/>
+    <text x="55" y="38" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#4C56AF">Concept · Intro</text>
+
+    <!-- Card title (Figtree style) -->
+    <text x="22" y="68" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="17" font-weight="700" letter-spacing="-0.3" fill="#172B36">The Tetris Effect</text>
+
+    <!-- Card reading copy (Literata style) -->
+    <text x="22" y="96" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#3B4D59">Patterns you practise repeatedly start</text>
+    <text x="22" y="117" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#3B4D59">to shape what you notice and remember</text>
+    <text x="22" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#3B4D59">across everyday life.</text>
+
+    <!-- Action pills inside card -->
+    <rect x="22" y="158" width="140" height="34" rx="14" fill="#F4EFE0"/>
+    <text x="92" y="179" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.5" font-weight="600" fill="#745C00">For later</text>
+
+    <rect x="174" y="158" width="140" height="34" rx="14" fill="#FADEE2"/>
+    <text x="244" y="179" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.5" font-weight="600" fill="#9E1C31">♥ Like</text>
+  </g>
+</svg>

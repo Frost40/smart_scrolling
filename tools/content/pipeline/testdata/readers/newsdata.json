@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "totalResults": 1626,
+  "results": [
+    {
+      "article_id": "959f3faff2233f80144399791f6c4e80",
+      "link": "https://albeu.com/english/technology-in-schools-alarms-british-parents-as-more-than-150-healthcare-professionals-voice-concerns/1101964/",
+      "title": "Technology in schools alarms British parents as more than 150 healthcare professionals voice concerns",
+      "description": "Përdorimi i pajisjeve elektronike në shkolla po shkakton shqetësim te një numër i madh prindërish në Britaninë e Madhe, të cilët druhen se koha e kaluar para ekraneve mund të dëmtojë shëndetin e fëmijëve. [...] Read More... The post Teknologjia në shkolla ngre alarmin te prindërit britanikë, mbi 150 [...] The post Technology in schools alarms British parents as more than 150 healthcare professionals voice concerns appeared first on Albeu.com.",
+      "content": "ONLY AVAILABLE IN PAID PLANS",
+      "keywords": [
+        "world",
+        "english"
+      ],
+      "creator": [
+        "albeu.com"
+      ],
+      "language": "english",
+      "country": [
+        "albania"
+      ],
+      "category": [
+        "top",
+        "health",
+        "science"
+      ],
+      "datatype": "news",
+      "pubDate": "2026-11-15 22:52:53",
+      "pubDateTZ": "UTC",
+      "fetched_at": "2026-11-15 23:18:10",
+      "image_url": "https://albeu.com/wp-content/uploads/2026/11/repost-1794780471107-uh2r8.avif",
+      "video_url": null,
+      "source_id": "albeu",
+      "source_name": "Albeu",
+      "source_priority": 833083,
+      "source_url": "https://albeu.com",
+      "source_icon": "https://i.newsdata.io/albeu.png",
+      "sentiment": "negative",
+      "sentiment_stats": {
+        "negative": 94.2,
+        "neutral": 5.07,
+        "positive": 0.73
+      },
+      "ai_tag": [
+        "pharma and healthcare",
+        "research"
+      ],
+      "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+      "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+      "duplicate": false
+    }
+  ]
+}

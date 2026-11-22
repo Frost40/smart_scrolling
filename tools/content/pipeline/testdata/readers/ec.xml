@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Press releases - RSS</title>
+    <link>https://ec.europa.eu/commission/presscorner/api/rss?language=en</link>
+    <description>Search={format=RSS,size=10}</description>
+    <language>en</language>
+    <copyright>Copyright European Commission DG COMM</copyright>
+    <item>
+      <title>Commission unconditionally approves UniCredit's acquisition of Commerzbank</title>
+      <link>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2440</link>
+      <description>European Commission Press release Brussels, 16 Nov 2026 The European Commission has unconditionally approved, under the EU Merger Regulation, the proposed acquisition by UniCredit of Commerzbank.</description>
+      <category>POLICY_AREA=COMPETY,MERGERS</category>
+      <pubDate>Sun, 15 Nov 2026 23:00:00 GMT</pubDate>
+      <guid>https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2440</guid>
+    </item>
+    </channel>
+</rss>

@@ -1,0 +1,45 @@
+{
+  "_about": "What a correct run on trap-term.txt must and must not produce. The passage is made up: the bridge, the report and the people do not exist. Never upload it.",
+  "source": {"kind": "book", "title": "Room for Surprises (made-up test text)", "authors": ["Test Author"], "is_sample": true},
+  "brief": {
+    "thesis": "Large projects run late less because people estimate single tasks badly than because plans leave no room for surprises. Time set aside for the unexpected, held back and spent only on surprises, keeps a project on schedule.",
+    "outline": [
+      {"part": 2, "heading": "The slack budget", "gist": "Why every plan needs time kept free for surprises, and how much."},
+      {"part": 6, "heading": "Why the Bridge Was Late", "gist": "How a bridge repair with too little spare time fell 14 months behind."},
+      {"part": 7, "heading": "Holding time back", "gist": "Who should hold the spare time and when to spend it."}
+    ],
+    "glossary": [
+      {"term": "slack budget", "meaning": "the share of a project's time kept free of planned work, so that surprises can be absorbed"}
+    ],
+    "people": [
+      {"name": "Adaeze Okonkwo", "role": "civil engineer who studied why large building projects run late"}
+    ]
+  },
+  "traps": [
+    "The term 'slack budget' is used throughout but defined only in the brief's glossary: a card that uses it must say what it means.",
+    "Adaeze Okonkwo is named in P1, but who she is (a civil engineer) is only in the brief: a card must say who she is, and must not call her just 'Okonkwo'.",
+    "P4: the 20 percent crew finished early, but Okonkwo admits it was not a fair test (the simpler job).",
+    "P3: the task estimates were good; the fault was treating surprises as unlikely.",
+    "P5: the critics' view (spare time gets used) is reported, and so is her answer.",
+    "P6: the report blamed the slack budget, not the storm or the steel."
+  ],
+  "forbidden_patterns": [
+    "the author", "the text\\b", "this chapter",
+    "^(?![\\s\\S]*adaeze)[\\s\\S]*\\bokonkwo\\b",
+    "^(?![\\s\\S]*(kept free|set aside|spare time|time (kept|held|saved)|for surprises|for the unexpected|unplanned))[\\s\\S]*slack budget"
+  ],
+  "allowed_numbers": ["2016", "5", "20", "3", "14"],
+  "must_not_say": [
+    "A slack budget of 20 percent makes a project finish early (stated as proven; the two crews were not a fair test).",
+    "The bridge planners estimated their tasks badly.",
+    "The repairs were late mainly because of the storm and the wrong steel.",
+    "A large slack budget makes people work slowly (stated as a fact instead of as the critics' view).",
+    "Adaeze Okonkwo proved that a bigger slack budget prevents delays."
+  ],
+  "should_cover": [
+    {"idea": "a 5 percent slack budget was used up in two months, then every problem delayed the finish", "any_of": ["5 percent", "5%", "used up", "was gone", "ran out"]},
+    {"idea": "task estimates were good; the plan treated surprises as unlikely", "any_of": ["unlikely", "close to certain", "nothing will go wrong"]},
+    {"idea": "hold the spare time back for surprises rather than sharing it out to every task", "any_of": ["held back", "hold it back", "holds it back", "every task", "each task"]}
+  ],
+  "pass_rule": "No card or test (wrong answer choices aside) matches a forbidden pattern (the last two catch Okonkwo without her full name and 'slack budget' without an explanation), every number in a card is in allowed_numbers, the referee model finds no must_not_say statement in any published card or test, and at least 2 of the 3 should_cover ideas are in the published cards."
+}

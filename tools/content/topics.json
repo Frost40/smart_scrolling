@@ -1,0 +1,119 @@
+[
+  {
+    "id": "computer-science",
+    "name": "Computer science (CS)",
+    "position": 0
+  },
+  {
+    "id": "artificial-intelligence",
+    "name": "Artificial intelligence (AI)",
+    "parent": "computer-science",
+    "position": 0
+  },
+  {
+    "id": "programming",
+    "name": "Programming",
+    "parent": "computer-science",
+    "position": 1
+  },
+  {
+    "id": "computer-graphics",
+    "name": "Computer graphics",
+    "parent": "computer-science",
+    "position": 2
+  },
+  {
+    "id": "psychology",
+    "name": "Psychology",
+    "position": 1
+  },
+  {
+    "id": "learning-and-memory",
+    "name": "Learning and memory",
+    "parent": "psychology",
+    "position": 0
+  },
+  {
+    "id": "positive-psychology",
+    "name": "Positive psychology",
+    "parent": "psychology",
+    "position": 1
+  },
+  {
+    "id": "habits",
+    "name": "Habits and behaviour",
+    "parent": "psychology",
+    "position": 2
+  },
+  {
+    "id": "biology",
+    "name": "Biology",
+    "position": 2
+  },
+  {
+    "id": "neuroscience",
+    "name": "Neuroscience",
+    "parent": "biology",
+    "position": 0
+  },
+  {
+    "id": "health",
+    "name": "Health and the body",
+    "parent": "biology",
+    "position": 1
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "position": 3
+  },
+  {
+    "id": "optics",
+    "name": "Optics and light",
+    "parent": "physics",
+    "position": 0
+  },
+  {
+    "id": "everyday-physics",
+    "name": "Everyday physics",
+    "parent": "physics",
+    "position": 1
+  },
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "position": 4
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "position": 5
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "position": 6
+  },
+  {
+    "id": "literature",
+    "name": "Literature",
+    "position": 7
+  },
+  {
+    "id": "society",
+    "name": "Society and news",
+    "position": 8
+  },
+  {
+    "id": "technology-policy",
+    "name": "Technology policy",
+    "parent": "society",
+    "position": 0
+  },
+  {
+    "id": "culture",
+    "name": "Culture",
+    "parent": "society",
+    "position": 1
+  }
+]

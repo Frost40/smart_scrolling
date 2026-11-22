@@ -1,0 +1,72 @@
+{
+  "query": "Meditations Marcus Aurelius",
+  "messages": [
+    {
+      "id": 6242,
+      "text": "Good news! We found 320 📚 on your request:\n\n📚 STOIC SIX PACK: MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPICT...\nMarcus Aurelius & Epictetus & Seneca [Aurelius,...\nYear: 2014\n🌐 English\n/book_aQO5kg3GYjr (pdf, 5.06 MB) ↗️\n\n📚 THE MEDITATIONS OF MARCUS AURELIUS\nMarcus Aurelius\nYear: 2008\n🌐 English\n/book_a6Ej8PmE3j9 (pdf, 1.03 MB) ↗️\n\n📚 STOIC SIX PACK : MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPIC...\nMarcus Aurelius\nYear: 2014\n🌐 English\n/book_aZO9E1AbyOe (epub, 1.83 MB) ↗️\n\n📚 THE MEDITATIONS OF MARCUS AURELIUS ANTONINUS\nMarcus Aurelius (Emperor of Rome), Arthur Spens...\nYear: 1998\n🌐 English\n/book_aY5jJ7MyQvp (pdf, 288 KB) ↗️\n\n📚 STOIC SIX PACK - MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPIC...\nAurelius, Marcus & Epictetus & Seneca\nYear: 2014\n🌐 English\n/book_a7vb2gL8kvY (epub, 1.74 MB) ↗️",
+      "edit": false,
+      "entities": [
+        {
+          "type": "command",
+          "text": "/book_aQO5kg3GYjr"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/QO5kg3GYjr"
+        },
+        {
+          "type": "command",
+          "text": "/book_a6Ej8PmE3j9"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/6Ej8PmE3j9"
+        },
+        {
+          "type": "command",
+          "text": "/book_aZO9E1AbyOe"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/ZO9E1AbyOe"
+        },
+        {
+          "type": "command",
+          "text": "/book_aY5jJ7MyQvp"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/Y5jJ7MyQvp"
+        },
+        {
+          "type": "command",
+          "text": "/book_a7vb2gL8kvY"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/7vb2gL8kvY"
+        }
+      ],
+      "buttons": [
+        [
+          {
+            "text": "- 1 -",
+            "kind": "callback",
+            "data": ""
+          },
+          {
+            "text": "(2) next »",
+            "kind": "callback",
+            "data": ""
+          }
+        ]
+      ],
+      "file": null
+    }
+  ]
+}

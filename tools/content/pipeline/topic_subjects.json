@@ -1,0 +1,23 @@
+{
+  "computer-science": ["computer_science", "computers", "algorithms"],
+  "artificial-intelligence": ["artificial_intelligence", "machine_learning"],
+  "programming": ["computer_programming", "programming_languages", "software_engineering"],
+  "computer-graphics": ["computer_graphics", "image_processing", "computer_vision"],
+  "psychology": ["cognitive_psychology", "social_psychology", "psychology"],
+  "learning-and-memory": ["learning", "cognition", "educational_psychology"],
+  "positive-psychology": ["positive_psychology", "happiness", "mental_health"],
+  "habits": ["human_behavior", "motivation", "decision_making"],
+  "biology": ["biology", "evolution", "genetics", "ecology"],
+  "neuroscience": ["neuroscience", "neurobiology", "brain"],
+  "health": ["health", "medicine", "nutrition", "public_health"],
+  "physics": ["physics", "quantum_theory", "relativity"],
+  "optics": ["optics", "lasers", "photonics"],
+  "everyday-physics": ["thermodynamics", "physical_sciences", "electricity"],
+  "mathematics": ["mathematics", "geometry", "statistics"],
+  "economics": ["economics", "economic_history", "macroeconomics", "microeconomics"],
+  "history": ["world_history", "ancient_history", "modern_history"],
+  "literature": ["literary_criticism", "books_and_reading", "rhetoric"],
+  "society": ["sociology", "political_science", "social_sciences"],
+  "technology-policy": ["technology_and_civilization", "computer_security", "internet"],
+  "culture": ["culture", "anthropology", "civilization", "art_history"]
+}

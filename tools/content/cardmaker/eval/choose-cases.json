@@ -1,0 +1,29 @@
+{
+  "_about": "Exam for the choose role (picking the right edition among a book bot's options). The model gets the book and the numbered labels and returns {\"index\": n, \"reason\": \"...\"}; -1 means none of these is this book. Pass: every `right` is matched. Cases 1 to 5 are invented in a common style; cases 6 to 8 are the real bot's answers (pipeline ticket 05, probes 1 to 3), after the rule filter.",
+  "cases": [
+    {"book": {"title": "Thinking, Fast and Slow", "authors": ["Daniel Kahneman"], "year": 2011},
+     "options": ["Summary of Thinking, Fast and Slow - QuickRead (epub, 0.3 MB)", "Thinking, Fast and Slow - Daniel Kahneman, 2011 (epub, 2.1 MB)", "Thinking Fast and Slow: Workbook and Study Guide (epub, 0.6 MB)", "Thinking in Bets - Annie Duke (epub, 1.4 MB)"],
+     "right": 1, "why": "a summary and a workbook are not the book"},
+    {"book": {"title": "The Selfish Gene", "authors": ["Richard Dawkins"], "year": 1976},
+     "options": ["Il gene egoista - Richard Dawkins (epub, 1.2 MB)", "The Selfish Gene, 40th Anniversary Edition - Richard Dawkins (epub, 1.9 MB)", "Le gène égoïste - Richard Dawkins (epub, 1.1 MB)"],
+     "right": 1, "why": "the English edition; a later edition of the same book is the same book"},
+    {"book": {"title": "Flow", "authors": ["Mihaly Csikszentmihalyi"], "year": 1990},
+     "options": ["Flow: A Novel - Kelly Harms (epub, 0.9 MB)", "Flow - The Psychology of Optimal Experience - M. Csikszentmihalyi (epub, 1.3 MB)", "Finding Flow - Mihaly Csikszentmihalyi (epub, 0.8 MB)"],
+     "right": 1, "why": "same title by another author, and another book by the same author, are both wrong"},
+    {"book": {"title": "The Structure of Scientific Revolutions", "authors": ["Thomas S. Kuhn"], "year": 1962},
+     "options": ["The Structure of Magic - Richard Bandler (epub, 1.0 MB)", "Scientific Revolutions: A Very Short Introduction (epub, 0.7 MB)", "Kuhn's Structure of Scientific Revolutions at Fifty: Reflections (epub, 2.2 MB)"],
+     "right": -1, "why": "none is the book itself; a book about the book is not the book"},
+    {"book": {"title": "Sapiens: A Brief History of Humankind", "authors": ["Yuval Noah Harari"], "year": 2014},
+     "options": ["Sapiens - A Graphic History, Volume 1 (epub, 88 MB)", "Sapiens: A Brief History of Humankind - Yuval Noah Harari (epub, 5.4 MB)", "Sapiens: A Brief History of Humankind - Yuval Noah Harari (epub, 5.6 MB, retail)"],
+     "right": [1, 2], "why": "two copies of the right book: either is right; the graphic adaptation is not"},
+    {"book": {"title": "Meditations", "authors": ["Marcus Aurelius"], "year": 180},
+     "options": ["📚 STOIC SIX PACK : MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPIC... · Marcus Aurelius · Year: 2014 · 🌐 English · /book_aZO9E1AbyOe (epub, 1.83 MB) ↗️", "📚 STOIC SIX PACK - MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPIC... · Aurelius, Marcus & Epictetus & Seneca · Year: 2014 · 🌐 English · /book_a7vb2gL8kvY (epub, 1.74 MB) ↗️", "📚 STOIC SIX PACK: MEDITATIONS OF MARCUS AURELIUS, GOLDEN SAYINGS, FRAGMENTS AND DISCOURSES OF EPICT... · Marcus Aurelius & Epictetus & Seneca [Aurelius,... · Year: 2014 · 🌐 English · /book_aQO5kg3GYjr (pdf, 5.06 MB) ↗️", "📚 THE MEDITATIONS OF MARCUS AURELIUS · Marcus Aurelius · Year: 2008 · 🌐 English · /book_a6Ej8PmE3j9 (pdf, 1.03 MB) ↗️", "📚 THE MEDITATIONS OF MARCUS AURELIUS ANTONINUS · Marcus Aurelius (Emperor of Rome), Arthur Spens... · Year: 1998 · 🌐 English · /book_aY5jJ7MyQvp (pdf, 288 KB) ↗️"],
+     "right": [3, 4], "why": "real bot (probe 1): the Stoic Six Pack bundles three authors; the better format does not make it the book"},
+    {"book": {"title": "On the Origin of Species", "authors": ["Charles Darwin"], "year": 1859},
+     "options": ["📚 THE ORIGIN OF SPECIES: 150TH ANNIVERSARY EDITION · Charles Darwin, Julian Huxley · Year: 2009 · 🌐 English · /book_aD2RAgl2DvL (epub, 627 KB) ↗️", "📚 THE FOUNDATION OF THE ORIGIN OF SPECIES: TWO ESSAYS WRITTEN IN 1842 AND 1844 BY CHARLES DARWIN · Charles Darwin · Year: 2009 · 🌐 English · /book_a4zOoLW27RQ (pdf, 4.21 MB) ↗️", "📚 ON THE ORIGIN OF SPECIES: CLASSIC ILLUSTRATED EDITION · Charles Darwin, L. Carr (Editor) · Year: 2008 · 🌐 English · /book_aaJO7rQ9Dv3 (pdf, 951 KB) ↗️", "📚 ON THE ORIGIN OF SPECIES · Charles Darwin · Year: 2008 · 🌐 English · /book_a23Rkyd25vX (pdf, 1.20 MB) ↗️", "📚 ON THE ORIGIN OF SPECIES KARYA CHARLES DARWIN: ASAL-USUL SPESIES · Michael Keller · Year: 2010 · 🌐 Indonesian · /book_ayOYaQX6YOk (pdf, 19.01 MB) ↗️"],
+     "right": [0, 2, 3], "why": "real bot (probe 2): the 1842-44 essays are a different work; the Indonesian edition is the wrong language"},
+    {"book": {"title": "Walden", "authors": ["Henry David Thoreau"], "year": 1854},
+     "options": ["📚 HENRY DAVID THOREAU - A WEEK ON THE CONCORD AND MERRIMACK RIVERS WALDEN, OR, LIFE IN THE WOODS TH... · Henry David Thoreau · Year: 1985 · 🌐 English · /book_a6Ej8VGyVO9 (epub, 2.72 MB) ↗️", "📚 WALDEN · Henry David Thoreau · Year: 2004 · 🌐 English · /book_aB7vb1l5MjY (epub, 1.24 MB) ↗️", "📚 THE ILLUSTRATED WALDEN: THOREAU BICENTENNIAL EDITION · Henry David Thoreau · Year: 2016 · 🌐 English · /book_aojLP3MDrjL (azw3, 3.96 MB) ↗️", "📚 WALDEN'S SHORE : HENRY DAVID THOREAU AND NINETEENTH-CENTURY SCIENCE · Thorson, Robert M.; Thoreau, Henry David · Year: 2014 · 🌐 English · /book_aLBjnwX3dv2 (pdf, 2.18 MB) ↗️", "📚 WALDEN: 150TH ANNIVERSARY EDITION · Henry David Thoreau, J. Lyndon Shanley · Year: 2004 · 🌐 English · /book_aLBjnoD2Ev2 (pdf, 14.01 MB) ↗️"],
+     "right": [1, 2, 4], "why": "real bot (probe 3): a volume joining two books and a book about Walden Pond are not the book"}
+  ]
+}

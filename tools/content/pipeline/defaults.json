@@ -1,0 +1,97 @@
+{
+  "paused": false,
+  "trial": false,
+  "tick": {"max_minutes": 9},
+  "stages": {
+    "scout":    {"enabled": true,  "every_minutes": 1440, "hours": [8, 23], "max_minutes": 5,  "run": "builtin"},
+    "fetch":    {"enabled": true,  "every_minutes": 120,  "hours": [8, 23], "max_minutes": 8,  "run": "builtin", "per_run": 1},
+    "feeds":    {"enabled": true,  "every_minutes": 480,  "hours": [0, 24], "max_minutes": 5,  "run": "builtin"},
+    "make":     {"enabled": true,  "every_minutes": 30,   "hours": [0, 24], "max_minutes": 25, "run": "builtin"},
+    "publish":  {"enabled": true,  "every_minutes": 30,   "hours": [0, 24], "max_minutes": 5,  "run": "builtin"},
+    "requests": {"enabled": true,  "every_minutes": 720,  "hours": [0, 24], "max_minutes": 10, "run": "builtin"}
+  },
+  "providers": {
+    "claude-haiku":  {"driver": "cli", "preset": "claude", "model": "haiku",  "family": "anthropic", "max_calls_per_day": 400},
+    "claude-sonnet": {"driver": "cli", "preset": "claude", "model": "sonnet", "family": "anthropic", "max_calls_per_day": 100},
+    "codex":         {"driver": "cli", "preset": "codex",  "model": "gpt-6-luna",       "family": "openai",    "max_calls_per_day": 100, "enabled": false},
+    "gemini-cli":    {"driver": "cli", "preset": "agy",    "model": "gemini-3.8-flash-medium", "program": "%USERPROFILE%/.gemini/bin/agy.exe", "tools": "on",       "family": "google",    "max_calls_per_day": 300, "enabled": false},
+    "gemini-api":    {"driver": "openai", "base_url": "https://generativelanguage.googleapis.com/v1beta/openai", "key_env": "GEMINI_API_KEY", "model": "", "json": "schema", "family": "google", "max_calls_per_day": 200, "enabled": false},
+    "openrouter":    {"driver": "openai", "base_url": "https://openrouter.ai/api/v1", "key_env": "OPENROUTER_API_KEY", "model": "", "json": "schema", "extra_body": {"provider": {"require_parameters": true}}, "family": "other", "max_calls_per_day": 50, "enabled": false},
+    "local":         {"driver": "openai", "base_url": "http://localhost:11434/v1", "key_env": "", "model": "", "json": "schema", "family": "local", "max_calls_per_day": 100000, "enabled": false}
+  },
+  "roles": {
+    "scout":     ["claude-haiku"],
+    "choose":    ["claude-haiku"],
+    "summarize": ["claude-haiku"],
+    "brief":     ["claude-haiku"],
+    "extract":   ["claude-haiku"],
+    "select":    ["claude-haiku"],
+    "write":     ["claude-haiku"],
+    "judge":     ["claude-sonnet", "claude-haiku"],
+    "quiz":      ["claude-haiku"],
+    "solve":     ["claude-haiku"]
+  },
+  "wishlist": {
+    "target_wanted": 30,
+    "topic_balance": true,
+    "year_from": 1950,
+    "sources": {
+      "owner": true,
+      "openlibrary_trending": true,
+      "openlibrary_subjects": true,
+      "prize_pages": true,
+      "nyt_lists": false,
+      "model_suggestions": true
+    },
+    "model_suggestions_per_run": 10
+  },
+  "fetch": {
+    "driver": "telegram",
+    "bot": "@example_book_bot",
+    "query": "{title} {author_surname}",
+    "formats": ["epub", "azw3", "mobi", "fb2", "pdf"],
+    "max_mb": 80,
+    "reply_wait_seconds": 90,
+    "quiet_seconds": 6,
+    "max_hops": 4,
+    "pause_seconds": [5, 20],
+    "max_attempts": 3,
+    "retry_after_days": 7,
+    "stop_words": ["captcha", "subscribe", "join", "limit", "banned"]
+  },
+  "feeds": [
+    {"reader": "wikipedia_current_events", "params": {}, "topics": ["society"], "per_day": 2, "enabled": true},
+    {"reader": "wikipedia_in_the_news", "params": {}, "topics": ["society"], "per_day": 1, "enabled": true},
+    {"reader": "nasa_news", "params": {}, "topics": ["physics"], "per_day": 1, "enabled": true},
+    {"reader": "ec_press", "params": {}, "topics": ["society"], "per_day": 1, "enabled": true},
+    {"reader": "newsdata", "params": {"category": "technology"}, "topics": ["technology-policy"], "per_day": 2, "enabled": true},
+    {"reader": "currents", "params": {"category": "technology"}, "topics": ["technology-policy"], "per_day": 2, "enabled": true},
+    {"reader": "arxiv", "params": {"query": "cat:cs.AI"}, "topics": ["artificial-intelligence"], "per_day": 2, "enabled": true},
+    {"reader": "hf_daily_papers", "params": {}, "topics": ["artificial-intelligence"], "per_day": 1, "enabled": true},
+    {"reader": "europepmc", "params": {"query": "neuroscience"}, "topics": ["neuroscience"], "per_day": 1, "enabled": true},
+    {"reader": "wikipedia_article", "params": {"from": "vital"}, "topics": ["society"], "per_day": 1, "enabled": true},
+    {"reader": "gutenberg", "params": {"subject": "physics"}, "topics": ["physics"], "per_day": 1, "enabled": true},
+    {"reader": "met", "params": {"query": "landscape"}, "topics": ["culture"], "per_day": 1, "enabled": true},
+    {"reader": "commons", "params": {"query": "paintings"}, "topics": ["culture"], "per_day": 1, "enabled": true}
+  ],
+  "licenses": {"allow_noncommercial": true},
+  "make": {
+    "chunk_words": [1500, 3000],
+    "ideas_per_chunk": 6,
+    "cards": {"book": {"per_words": 2500, "min": 10, "max": 60}, "article": {"per_words": 500, "min": 2, "max": 8}, "paper": {"min": 1, "max": 2}, "news": {"min": 1, "max": 2}},
+    "tests_per_card": 3,
+    "batch": {"write": 4, "judge": 4, "quiz": 3, "solve": 3},
+    "call_timeout_seconds": 300
+  },
+  "quality": {
+    "require_qualified": true,
+    "judge_differs_from_writer": true,
+    "tools_on_source_text": false,
+    "min_pass_rate": 0.6,
+    "min_cards": {"book": 8, "article": 2, "paper": 1, "news": 1}
+  },
+  "publish": {"auto_publish": false, "store_original": true, "store_text": true, "keep_archive": true},
+  "notify": {"telegram_saved_messages": true},
+  "dashboard": {"port": 8765},
+  "contact_email_env": "CONTACT_EMAIL"
+}

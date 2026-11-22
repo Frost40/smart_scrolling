@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/rss/1.0/modules/syndication/" xmlns:ns2="http://purl.org/rss/1.0/modules/content/" version="2.0">
+
+<channel>
+	<title>NASA</title>
+	<ns0:link href="https://www.nasa.gov/news-release/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.nasa.gov</link>
+	<description>Official National Aeronautics and Space Administration Website</description>
+	<lastBuildDate>Mon, 16 Nov 2026 05:05:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<ns1:updatePeriod>
+	hourly	</ns1:updatePeriod>
+	<ns1:updateFrequency>
+	1	</ns1:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.8</generator>
+	<item>
+		<title>APOD: 2026 November 16 – NGC 7129: Star Formation with Jets from Webb</title>
+		<link>https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/</link>
+		
+		<pubDate>Mon, 16 Nov 2026 05:05:00 +0000</pubDate>
+				<description>APOD Science APOD APOD: 2026 November 16 – NGC… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss   APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. NGC 7129: [&amp;#8230;]</description>
+										<ns2:encoded>&lt;div id="" class="hds-module hds-module-full alignfull wp-block-nasa-blocks-secondary-navigation"&gt;
+&lt;div class="hds-secondary-navigation-wrapper z-top width-100 padding-0"&gt;
+&lt;div id="" class="hds-secondary-navigation width-full border-bottom-1px text-center hds-color-mode-dark hds-module hds-module-full alignfull wp-block-nasa-blocks-hdsnav"&gt;&lt;button type="button" class="hds-secondary-nav-mobile-button display-flex tablet:display-flex desktop:display-none width-full flex-align-center bg-carbon-90 border-color-carbon-80 color-spacesuit-white" aria-expanded="false" aria-controls="hds-secondary-nav-track"&gt;&lt;span&gt;APOD&lt;/span&gt;&lt;svg width="16" height="16" alt="" enable-background="new 0 0 400 400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="m4.2 122.2 195.1 195.1 196.5-196.6-37.9-38-157.8 157.8-156.8-156.8z" /&gt;&lt;/svg&gt;&lt;/button&gt;&lt;/p&gt;
+&lt;div class="hds-secondary-nav-track grid-container grid-container-extrawide padding-0 tablet:padding-x-3 desktop:padding-x-2 hds-secondary-navigation-has-breadcrumbs"&gt;
+&lt;div class="hds-secondary-navigation-breadcrumbs display-none tablet:display-none desktop:display-flex flex-align-center"&gt;
+&lt;nav class="usa-breadcrumb" aria-label="Breadcrumbs"&gt;
+&lt;ol class="usa-breadcrumb__list"&gt;
+&lt;li class="usa-breadcrumb__list-item"&gt;&lt;a href="https://science.nasa.gov/" class="usa-breadcrumb__link" rel="noopener"&gt;&lt;span&gt;Science&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-breadcrumb__list-item"&gt;&lt;a href="https://science.nasa.gov/apod/apod-index/" class="usa-breadcrumb__link" rel="noopener"&gt;&lt;span&gt;APOD&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-breadcrumb__list-item usa-current" aria-current="page"&gt;&lt;span&gt;APOD: 2026 November 16 – NGC…&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class="hds-secondary-navigation-menu-items"&gt;
+&lt;nav&gt;
+&lt;ul class="usa-nav__primary usa-accordion flex-justify-center margin-0"&gt;
+&lt;li class="usa-nav__primary-item "&gt;&lt;a class="usa-nav__link" href="https://science.nasa.gov/apod/" rel="noopener"&gt;Today’s APOD&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-nav__primary-item "&gt;&lt;a class="usa-nav__link" href="https://science.nasa.gov/apod/archive/" rel="noopener"&gt;Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-nav__primary-item "&gt;&lt;a class="usa-nav__link" href="https://science.nasa.gov/apod/submit/" rel="noopener"&gt;Submissions&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-nav__primary-item "&gt;&lt;a class="usa-nav__link" href="https://science.nasa.gov/apod/apod-index/" rel="noopener"&gt;Index&lt;/a&gt;&lt;/li&gt;
+&lt;li class="usa-nav__primary-item "&gt;&lt;a class="usa-nav__link" href="https://science.nasa.gov/apod/apod-search/" rel="noopener"&gt;Search&lt;/a&gt;&lt;/li&gt;</ns2:encoded>
+					
+		
+		
+			</item>
+		</channel>
+</rss>

@@ -1,0 +1,666 @@
+{
+  "_about": "One JSON Schema per prompt file in prompts/. Kept to the subset every provider accepts: every field required, no null, additionalProperties false, no length keywords. Lengths and counts are checked by code after the reply (see SKILL.md).",
+  "image": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["cards"],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ref", "title", "front", "back", "media_alt"],
+          "properties": {
+            "ref": {"type": "string"},
+            "title": {"type": "string"},
+            "front": {"type": "string"},
+            "back": {"type": "string"},
+            "media_alt": {"type": "string"}
+          }
+        }
+      }
+    }
+  },
+  "summarize": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "summary",
+      "terms",
+      "people",
+      "content"
+    ],
+    "properties": {
+      "summary": {
+        "type": "string"
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "term",
+            "meaning"
+          ],
+          "properties": {
+            "term": {
+              "type": "string"
+            },
+            "meaning": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "people": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "role"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "content": {
+        "type": "boolean"
+      }
+    }
+  },
+  "brief": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "thesis",
+      "outline",
+      "glossary",
+      "people",
+      "description",
+      "topics",
+      "new_topic"
+    ],
+    "properties": {
+      "thesis": {
+        "type": "string"
+      },
+      "outline": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "part",
+            "heading",
+            "gist"
+          ],
+          "properties": {
+            "part": {
+              "type": "integer"
+            },
+            "heading": {
+              "type": "string"
+            },
+            "gist": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "glossary": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "term",
+            "meaning"
+          ],
+          "properties": {
+            "term": {
+              "type": "string"
+            },
+            "meaning": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "people": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "role"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "topics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "new_topic": {
+        "type": "string"
+      }
+    }
+  },
+  "extract": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "ideas"
+    ],
+    "properties": {
+      "ideas": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "claim",
+            "support",
+            "limits",
+            "stance",
+            "kind",
+            "paragraphs",
+            "evidence_quote",
+            "quote_text",
+            "speaker",
+            "importance"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "claim": {
+              "type": "string"
+            },
+            "support": {
+              "type": "string"
+            },
+            "limits": {
+              "type": "string"
+            },
+            "stance": {
+              "type": "string",
+              "enum": [
+                "claims",
+                "reports",
+                "rejects"
+              ]
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "concept",
+                "myth",
+                "research",
+                "quote"
+              ]
+            },
+            "paragraphs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "evidence_quote": {
+              "type": "string"
+            },
+            "quote_text": {
+              "type": "string"
+            },
+            "speaker": {
+              "type": "string"
+            },
+            "importance": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "select": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "chosen",
+      "duplicates",
+      "topics",
+      "new_topic"
+    ],
+    "properties": {
+      "chosen": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "format",
+            "level"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "concept",
+                "myth",
+                "research",
+                "quote",
+                "news"
+              ]
+            },
+            "level": {
+              "type": "string",
+              "enum": [
+                "intro",
+                "intermediate",
+                "advanced"
+              ]
+            }
+          }
+        }
+      },
+      "duplicates": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "same_as"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string"
+            },
+            "same_as": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "topics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "new_topic": {
+        "type": "string"
+      }
+    }
+  },
+  "write": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "cards"
+    ],
+    "properties": {
+      "cards": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "title",
+            "front",
+            "back"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "front": {
+              "type": "string"
+            },
+            "back": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "judge": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "verdicts"
+    ],
+    "properties": {
+      "verdicts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "notes",
+            "supported",
+            "faithful",
+            "standalone",
+            "complete",
+            "one_idea",
+            "worth",
+            "problem",
+            "fix"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "supported": {
+              "type": "boolean"
+            },
+            "faithful": {
+              "type": "boolean"
+            },
+            "standalone": {
+              "type": "boolean"
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "one_idea": {
+              "type": "boolean"
+            },
+            "worth": {
+              "type": "boolean"
+            },
+            "problem": {
+              "type": "string"
+            },
+            "fix": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "quiz": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "tests"
+    ],
+    "properties": {
+      "tests": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "card",
+            "type",
+            "prompt",
+            "answer",
+            "choices",
+            "correct_choice",
+            "is_true",
+            "correct_order",
+            "match_left",
+            "match_right",
+            "explanation"
+          ],
+          "properties": {
+            "card": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "flashcard",
+                "multiple_choice",
+                "true_false",
+                "ordering",
+                "matching"
+              ]
+            },
+            "prompt": {
+              "type": "string"
+            },
+            "answer": {
+              "type": "string"
+            },
+            "choices": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "correct_choice": {
+              "type": "integer"
+            },
+            "is_true": {
+              "type": "boolean"
+            },
+            "correct_order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "match_left": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "match_right": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "explanation": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "solve": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "unclear",
+      "answers"
+    ],
+    "properties": {
+      "unclear": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "words"
+          ],
+          "properties": {
+            "ref": {
+              "type": "string"
+            },
+            "words": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "answers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "test",
+            "answerable",
+            "choice",
+            "is_true",
+            "order",
+            "pairs",
+            "text"
+          ],
+          "properties": {
+            "test": {
+              "type": "string"
+            },
+            "answerable": {
+              "type": "boolean"
+            },
+            "choice": {
+              "type": "integer"
+            },
+            "is_true": {
+              "type": "boolean"
+            },
+            "order": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "pairs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "text": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "referee": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "findings"
+    ],
+    "properties": {
+      "findings": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "statement",
+            "said",
+            "where",
+            "quote"
+          ],
+          "properties": {
+            "statement": {
+              "type": "integer"
+            },
+            "said": {
+              "type": "boolean"
+            },
+            "where": {
+              "type": "string"
+            },
+            "quote": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "choose": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "index",
+      "reason"
+    ],
+    "properties": {
+      "index": {
+        "type": "integer"
+      },
+      "reason": {
+        "type": "string"
+      }
+    }
+  },
+  "scout": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "books"
+    ],
+    "properties": {
+      "books": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "author",
+            "topic",
+            "why"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "topic": {
+              "type": "string"
+            },
+            "why": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

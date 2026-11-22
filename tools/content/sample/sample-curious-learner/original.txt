@@ -1,0 +1,6 @@
+The Curious Learner (sample)
+
+A made-up book used only to test SmartScrolling.
+
+Chapter 1. Curiosity
+A good question is a hook: the answer has something to hold on to.

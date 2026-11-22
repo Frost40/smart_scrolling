@@ -1,0 +1,101 @@
+{
+ "_about": "Exam for the solve role. Each case is a card and tests whose right answers are known. The solver sees the card and the tests without `key`. Pass: every `key` is matched, and every test with \"key\": \"unanswerable\" comes back with answerable false. The cards are about the made-up text trap-attention.txt.",
+ "cases": [
+  {
+   "card": {
+    "ref": "a",
+    "title": "Doing two jobs at once",
+    "front": "Adults who did two office tasks at once took much longer and made far more errors than adults who did them one after the other.",
+    "back": "In 2009 the researcher Marta Ruiz and her colleague Tomas Lind recruited 212 adult office workers. The group doing proofreading and read-aloud sums together took 40 percent longer and made about twice as many errors. The test covered only ordinary desk work done in one afternoon; drivers, surgeons and children were not tested."
+   },
+   "tests": [
+    {
+     "id": "a1",
+     "type": "multiple_choice",
+     "prompt": "In the 2009 study by Marta Ruiz and Tomas Lind, what happened to office workers who did two desk tasks at the same time?",
+     "choices": [
+      "They finished about 40 percent faster with no change in errors",
+      "They made about twice as many errors but finished at the same speed",
+      "They finished about 40 percent slower and made about twice as many errors",
+      "They finished about 15 percent slower with only slightly more errors"
+     ],
+     "key": 2
+    },
+    {
+     "id": "a2",
+     "type": "true_false",
+     "prompt": "The 2009 study by Marta Ruiz and Tomas Lind tested drivers and surgeons and found they also took about 40 percent longer when doing two jobs at once.",
+     "key": false
+    },
+    {
+     "id": "a3",
+     "type": "multiple_choice",
+     "prompt": "In which city did Marta Ruiz and Tomas Lind run their 2009 study?",
+     "choices": [
+      "Boston",
+      "Madrid",
+      "Oslo",
+      "Toronto"
+     ],
+     "key": "unanswerable"
+    }
+   ]
+  },
+  {
+   "card": {
+    "ref": "b",
+    "title": "The hidden switch cost",
+    "front": "Every switch between jobs has a cost in seconds and mistakes, and the person paying that cost does not notice it.",
+    "back": "The researcher Marta Ruiz called this the switch cost. People can switch between jobs quickly, but each switch takes time and accuracy that they do not feel."
+   },
+   "tests": [
+    {
+     "id": "b1",
+     "type": "multiple_choice",
+     "prompt": "What does the term switch cost describe?",
+     "choices": [
+      "The seconds and mistakes lost each time someone moves between jobs",
+      "The extra salary paid to staff who handle two departments",
+      "The money a company spends training workers to change tasks",
+      "The delay caused by a computer restarting between programs"
+     ],
+     "key": 0
+    },
+    {
+     "id": "b2",
+     "type": "true_false",
+     "prompt": "Each time a person switches between two jobs, some seconds and accuracy are lost, though the person usually does not feel the loss.",
+     "key": true
+    }
+   ]
+  },
+  {
+   "card": {
+    "ref": "c",
+    "title": "Overrating dual-task performance",
+    "front": "People who juggle two jobs at once can rate their own performance higher than people doing one job at a time, even when they performed worse.",
+    "back": "In the 2009 experiment led by Marta Ruiz, workers who did two jobs at once rated their own performance higher afterwards. Yet they had taken 40 percent longer and made about twice as many errors as the single-job group."
+   },
+   "tests": [
+    {
+     "id": "c1",
+     "type": "multiple_choice",
+     "prompt": "A worker finishes two jobs at once and feels sure the work went well. What does the 2009 research by Marta Ruiz suggest about that feeling?",
+     "choices": [
+      "It is accurate, since juggling tasks shows real skill",
+      "It usually matches results, since people judge their own work well",
+      "It appears only when the two jobs are very easy",
+      "It is often inflated, since they may have been slower and less accurate"
+     ],
+     "key": 3
+    },
+    {
+     "id": "c2",
+     "type": "true_false",
+     "prompt": "Workers who handled two jobs at once rated their own performance lower than workers who did one job at a time.",
+     "key": false
+    }
+   ]
+  }
+ ]
+}

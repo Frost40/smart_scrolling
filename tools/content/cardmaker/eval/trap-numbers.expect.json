@@ -1,0 +1,40 @@
+{
+  "_about": "What a correct run on trap-numbers.txt must and must not produce. The passage is made up: the institute, the study and the people do not exist. Never upload it.",
+  "source": {"kind": "book", "title": "Sleep and Learning (made-up test text)", "authors": ["Test Author"], "is_sample": true},
+  "brief": {
+    "thesis": "Sleep is closely linked to how well students learn and perform, but the size of the link depends on the kind of task and on how sleep is measured; good habits over weeks matter more than one good night.",
+    "outline": [
+      {"part": 2, "heading": "How sleep is measured", "gist": "Wrist bands, diaries and their limits."},
+      {"part": 3, "heading": "What the Sleep Study Found", "gist": "A one-term study of 1,200 students and exam results."},
+      {"part": 4, "heading": "Changing exam timetables", "gist": "What universities could do with the findings."}
+    ],
+    "glossary": [],
+    "people": []
+  },
+  "traps": [
+    "P2: 14 percent higher scores: only on the night before, only for problem-solving exams, 7 hours against less than 5.",
+    "P3: 41 percent less likely to fail: across the term, most nights, 7 hours against less than 6, first-year students only.",
+    "14 and 41 are easy to swap: '41 percent higher' or '14 percent less likely' is wrong.",
+    "P4: weekend catch-up: only 3 percent better and only in the first month.",
+    "P5: limits: volunteers, time asleep not depth, one term only, a link not a cause.",
+    "P6: Lena Okafor's suggestion about exam times is her view."
+  ],
+  "forbidden_patterns": ["the author", "the text\\b", "this chapter", "41 ?(%|percent) (higher|better)", "14 ?(%|percent) (less|fewer|lower)", "deep(er)? sleep"],
+  "allowed_numbers": ["2018", "1,200", "1200", "4", "7", "5", "14", "41", "6", "9", "3"],
+  "must_not_say": [
+    "Sleeping well the night before an exam raises the score by 41 percent.",
+    "Good sleep over a term makes students 14 percent less likely to fail.",
+    "Sleeping at least 7 hours before any exam, including memory tests, raises the score by 14 percent (the problem-solving condition is dropped).",
+    "Good sleep makes all students, older ones included, 41 percent less likely to fail (the first-year condition is dropped).",
+    "Catching up on sleep at weekends makes up for short nights during the week.",
+    "The study measured how deeply the students slept.",
+    "The results hold over a whole university degree.",
+    "The study proved that sleep causes better marks."
+  ],
+  "should_cover": [
+    {"idea": "14 percent higher scores on problem-solving exams after 7 hours the night before", "any_of": ["14 percent", "14%"]},
+    {"idea": "41 percent less likely to fail with 7 hours on most nights (first-year students)", "any_of": ["41 percent", "41%"]},
+    {"idea": "weekend catch-up sleep barely helps", "any_of": ["weekend"]}
+  ],
+  "pass_rule": "No card or test (wrong answer choices aside) matches a forbidden pattern, every number in a card is in allowed_numbers, the referee model finds no must_not_say statement in any published card or test, and at least 2 of the 3 should_cover ideas are in the published cards."
+}

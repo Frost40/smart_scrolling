@@ -1,0 +1,77 @@
+{
+  "query": "Walden Thoreau",
+  "messages": [
+    {
+      "id": 6246,
+      "text": "Good news! We found 500 📚 on your request:\n\n📚 HENRY DAVID THOREAU - A WEEK ON THE CONCORD AND MERRIMACK RIVERS WALDEN, OR, LIFE IN THE WOODS TH...\nHenry David Thoreau\nYear: 1985\n🌐 English\n/book_a6Ej8VGyVO9 (epub, 2.72 MB) ↗️\n\n📚 WALDEN'S SHORE : HENRY DAVID THOREAU AND NINETEENTH-CENTURY SCIENCE\nThorson, Robert M.; Thoreau, Henry David\nYear: 2014\n🌐 English\n/book_aLBjnwX3dv2 (pdf, 2.18 MB) ↗️\n\n📚 WALDEN: 150TH ANNIVERSARY EDITION\nHenry David Thoreau, J. Lyndon Shanley\nYear: 2004\n🌐 English\n/book_aLBjnoD2Ev2 (pdf, 14.01 MB) ↗️\n\n📚 WALDEN\nHenry David Thoreau\nYear: 2004\n🌐 English\n/book_aB7vb1l5MjY (epub, 1.24 MB) ↗️\n\n📚 THE ILLUSTRATED WALDEN: THOREAU BICENTENNIAL EDITION\nHenry David Thoreau\nYear: 2016\n🌐 English\n/book_aojLP3MDrjL (azw3, 3.96 MB) ↗️\n\n– – – – – – – \n💡Hint: You can view books by update date, by language or by category | visit Example Library website",
+      "edit": false,
+      "entities": [
+        {
+          "type": "command",
+          "text": "/book_a6Ej8VGyVO9"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/6Ej8VGyVO9"
+        },
+        {
+          "type": "command",
+          "text": "/book_aLBjnwX3dv2"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/LBjnwX3dv2"
+        },
+        {
+          "type": "command",
+          "text": "/book_aLBjnoD2Ev2"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/LBjnoD2Ev2"
+        },
+        {
+          "type": "command",
+          "text": "/book_aB7vb1l5MjY"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/B7vb1l5MjY"
+        },
+        {
+          "type": "command",
+          "text": "/book_aojLP3MDrjL"
+        },
+        {
+          "type": "url",
+          "text": "↗️",
+          "url": "https://example.org/book/ojLP3MDrjL"
+        },
+        {
+          "type": "url",
+          "text": "Example Library website",
+          "url": "https://example.org/recently.php"
+        }
+      ],
+      "buttons": [
+        [
+          {
+            "text": "- 1 -",
+            "kind": "callback",
+            "data": "636f6d6d616e643d64756d6d79"
+          },
+          {
+            "text": "(2) next »",
+            "kind": "callback",
+            "data": "636f6d6d616e643d6c69676874506167696e6174696f6e26706167653d32266c696d69743d35"
+          }
+        ]
+      ],
+      "file": null
+    }
+  ]
+}
